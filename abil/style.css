@@ -327,7 +327,7 @@ main.container .box2{
     background: #FFFFFF;
     border-radius: 25px;
     line-height: 18px;
-    padding: 12px;
+    padding: 18px;
     height: 164px;
 }
 
@@ -377,3 +377,140 @@ main.container .box5{
     margin-bottom: 10px;
 }
 /* section content */
+
+/* Section deskripsi */
+section.deskripsi{
+
+    margin:0 auto;
+    max-width:707.5px;
+    margin-top:110px ;
+    font-family:"Public Sans", sans-serif ;
+}
+.text-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap:10px;
+}
+.text-item {
+    padding: 20px 20px 20px 0px;
+    font-size: 21px;
+    text-align: center;
+    font-weight: bold;
+    color: #253245;
+  }
+
+.text-item2 {
+    padding: 20px;
+    font-size: 12px;
+  }
+
+.text-item3 {
+    padding: 5px;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 12px;
+}
+.text-container a{
+    border:solid thin #366059;
+    padding: 10px 14px 10px 14px;
+    font-size: 11px;
+    text-align: center;
+    border-radius:18px;
+    line-height:2;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #476A65;
+}
+.text-container a:hover{
+    background-color: #366059;
+    color: #e9e9e9;
+}
+.title h1{
+    font-size: 27px;
+    font-weight: bold;
+    color: #366158;
+}
+.title {
+    padding: 20px 0px 20px 0px;
+    text-align: left;
+    grid-column: 1/3;
+    max-width: 362px;
+  }
+.title p{
+    margin-top: 15px;
+    font-size: 12px;
+    color: #6E7A88;
+    line-height: 1.5;
+}
+  .plus{
+    padding-top: 15px;
+    text-align: right;
+    line-height:2;
+    color: #476A65;
+  }
+  .plus a{
+    margin-right: 10px;
+    border-radius: 100%;
+    border:solid #FF7E35;
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+    text-align: center;
+    color: #FF7E35;
+  }
+  .plus a:hover{
+    background-color: #FF7E35;
+    color: #e9e9e9;
+}
+.minus{
+    padding-top: 15px;
+    text-align: right;
+    line-height:2;
+    color: #476A65;
+  }
+  .minus a{
+    margin-right: 10px;
+    border-radius: 100%;
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #FF7E35;
+    border:solid #FF7E35;
+
+    position: relative;
+    top: -140px;
+  }
+  .minus a:hover{
+    background-color: #ffffff;
+    color: #FF7E35;
+}
+
+.minus img{
+    width: 170px;
+    height: 184px;
+    margin-right: 10px;
+    border-radius: 22px;
+    object-fit: cover;
+}
+
+.title button{
+    margin-top:15px ;
+    padding: 13px 20px;
+    background-color: #366059;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    font-family: "Public Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+.title button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+/* Section deskripsi */
