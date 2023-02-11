@@ -160,12 +160,15 @@ main.hero ul li{
     object-fit: cover;
     height: 312px;
     width: 297px;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
     margin-left: 100px;
     margin-right: 10px;
     gap: 10px;
 }
-
+ .img{
+    margin-top: -100px;
+    margin-left: 40px;
+}
  .image2{
     margin-top: -150px;
     border-radius: 25px;
@@ -385,6 +388,7 @@ section.deskripsi{
     max-width:707.5px;
     margin-top:110px ;
     font-family:"Public Sans", sans-serif ;
+    margin-bottom: 130px;
 }
 .text-container{
     display: grid;
@@ -512,5 +516,18 @@ section.deskripsi{
 }
 .title button:hover{
     background-color: rgba(0,136,169,0.8);
+}
+
+.judul{
+    text-align: center;
+    font-size: 21px;
+    font-family: "Public Sans", sans-serif;
+    line-height: 2.2;
+}
+.subtext{
+    text-align: center;
+    font-size: 12px;
+    font-family: "Public Sans", sans-serif;
+    line-height: 1.5;
 }
 /* Section deskripsi */
