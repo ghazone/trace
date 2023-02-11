@@ -246,15 +246,14 @@ main.container{
     grid-template-columns: auto 176px 338px;
     gap: 10px;
     justify-content: center;
-    max-width: 960.6px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 35px;
 }
 
 main.container .box1{
     font-size: 27px;
     font-family:"Public Sans", sans-serif ;
-    padding-right: 33px;
 }
 
 .box1 .btn{
@@ -328,7 +327,7 @@ main.container .box2{
     background: #FFFFFF;
     border-radius: 25px;
     line-height: 18px;
-    padding: 20px;
+    padding: 12px;
     height: 164px;
 }
 
@@ -356,7 +355,6 @@ main.container .box5{
     display: flex;
     height: 340px;
     align-items: end;
-    background-color: DodgerBlue;
     border-radius: 25px;
     justify-content:baseline;
     gap: 50px;
@@ -368,5 +366,14 @@ main.container .box5{
 .box5 .flex2{
     width: 150px;
     font-size: 12px;
+}
+
+.box5 i{
+    font-size: 25px;
+    padding: 10px 15px 10px 15px;
+    background-color: #FF7E35;
+    border-radius: 13px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
 }
 /* section content */
