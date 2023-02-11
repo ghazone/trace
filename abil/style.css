@@ -10,7 +10,7 @@
 li, a{
     font-family: "Public Sans", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 12px;
     color: #90969E;
     text-decoration: none;
 }
@@ -20,7 +20,7 @@ span{
     display: flex;
     font-family: "Public Sans", sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 header{
@@ -55,8 +55,8 @@ header{
     color: #0088a9;
 }
 
-button{
-    padding: 9px 25px;
+header .button{
+    padding: 12px 25px;
     background-color: #366059;
     border: none;
     border-radius: 5px;
@@ -65,7 +65,7 @@ button{
 
     font-family: "Public Sans", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 12px;
     color: #edf0f1;
     text-decoration: none;
 }
@@ -100,9 +100,10 @@ section.intro h1{
 
 section.intro p{
     font-family: "Public Sans",sans-serif;
-    font-size: 0.95em;
+    font-size: 12px;
     line-height: 1.8;
     color: #ACB3BE;
+    max-width: 511px;
 }
 
 /* section Text End   */
@@ -116,20 +117,20 @@ section.content{
 main.hero{
     display: grid;
     font-family: "Public Sans", sans-serif;
-    grid-template-columns: auto auto auto auto;
-    padding: 0px 0% 0px 10%;
+    grid-template-columns: auto auto auto ;
 }
 
-main.hero ul{
+main.hero ul li{
     padding-top: 20px;
     list-style:none;
-    line-height: 2.5;
+    line-height: 24px;
+    font-family: "Public Sans", sans-serif;
+    font-size: 17px;
 }
 
 .star-eight {
     background: #FF7E35;
     top: -20px;
-    left: 10%;
     width: 40px;
     height: 40px;
     position: relative;
@@ -154,17 +155,19 @@ main.hero ul{
 }
 
  .image1{
-    margin-top: -206px;
+    margin-top: -106px;
     border-radius: 25px;
     object-fit: cover;
-    height: 297px;;
-    width: 312;
-    margin-right: 20px;
+    height: 312px;
+    width: 297px;
     margin-bottom: 55px;
+    margin-left: 100px;
+    margin-right: 10px;
+    gap: 10px;
 }
 
  .image2{
-    margin-top: -110px;
+    margin-top: -150px;
     border-radius: 25px;
     object-fit: cover;
     width: 290px;
@@ -175,20 +178,24 @@ main.hero ul{
 main.hero .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 12%;
+    width: 116px;
     border-radius:20px;
-    position: absolute;
     background-color: #FFFFFF;
-    top: 475px;
-    right: 160px;
-    height: 15%;
+    height: 76px;
+    position: relative;
+    top: -310px;
+    right: -250px;
   }
 
 main.hero .card h1{
     color: #376058;
     font-family: "Public Sans",sans-serif;
-    font-size: xx-large;
+    font-size:25px;
     line-height: 1.5;
+}
+main.hero .card p{
+    font-family: "Public Sans",sans-serif;
+    font-size:9px;
 }
   
 main.hero .card:hover {
@@ -196,26 +203,30 @@ main.hero .card:hover {
   }
   
 main.hero .container {
-    padding: 10px 0px 10px 12px;
-    line-height:1.3;
+    padding:5px 0px 10px 12px;
     font-family: "Public Sans", sans-serif;
   }
 
 main.hero .card2 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 7%;
+    width: 77px;
+    height: 76px;
     border-radius:20px;
-    position: absolute;
     background-color: #FFFFFF;
-    top: 590px;
-    right: 225px;
+    position: relative;
+    top: -300px;
+    right: -250px;
   }
 
 main.hero .card2 h1{
     color: #376058;
     font-family: "Public Sans",sans-serif;
-    font-size: xx-large;
+    font-size: 25px;
+}
+main.hero .card2 p{
+    font-family: "Public Sans",sans-serif;
+    font-size: 9px;
 }
   
 main.hero .card2:hover {
@@ -223,22 +234,21 @@ main.hero .card2:hover {
   }
   
 main.hero .container2 {
-    padding: 5px 0px 10px 15px;
-    line-height:1.3;
+    padding:5px 0px 10px 12px;
+    line-height:1.5;
     font-family: "Public Sans", sans-serif;
   }
 
 main.container{
-    padding: 2% 2% 2% 2%;
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
     background-color:#E9E9E9;
     border-radius: 35px;
     display: grid;
     grid-template-columns: auto 176px 338px;
     gap: 10px;
     justify-content: center;
+    max-width: 960.6px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 main.container .box1{
