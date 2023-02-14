@@ -29,7 +29,7 @@ header{
     /* justify-content: flex-end; */
     align-items: center;
     max-width: 852px;
-    margin: 0 auto;
+    margin: 10px auto 10px auto;
     
 }
 
@@ -153,6 +153,8 @@ main.hero ul li{
         -ms-transform: rotate(135deg);
          -o-transform: rotate(135deg);
 }
+section.content .grid-1{
+}
 
  .image1{
     margin-top: -106px;
@@ -164,6 +166,7 @@ main.hero ul li{
     margin-left: 100px;
     margin-right: 10px;
     gap: 10px;
+    
 }
  .img{
     margin-top: -100px;
