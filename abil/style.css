@@ -183,8 +183,9 @@ section.content .grid-1{
     
 }
  .img{
-    margin-top: -100px;
-    margin-left: -56px;
+    position: absolute;
+    bottom: -25px;
+    left: -56px;
 }
  .image2{
     margin-top: -106px;
@@ -194,7 +195,9 @@ section.content .grid-1{
     height: 390px;
 
 }
-
+main.hero .box-hero{
+    position: relative;
+}
 main.hero .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -202,9 +205,9 @@ main.hero .card {
     border-radius:20px;
     background-color: #FFFFFF;
     height: 76px;
-    position: relative;
-    top: -25px;
-    left: -67px;
+    position: absolute;
+    top: -22px;
+    right:  -53.2px;
   }
 
 main.hero .card h1{
@@ -234,10 +237,9 @@ main.hero .card2 {
     height: 76px;
     border-radius:20px;
     background-color: #FFFFFF;
-    position: relative;
-    margin-left: 150px;
-    margin-top: -245px;
-    left: 629px;
+    position: absolute;
+    top: 65px;
+    right: -14.2px;
   }
 
 main.hero .card2 h1{
