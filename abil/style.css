@@ -24,13 +24,7 @@ span{
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
-    /* justify-content: flex-end; */
-    align-items: center;
-    max-width: 852px;
-    margin: 10px auto 10px auto;
-    
+    margin: 23px auto 10px auto;
 }
 
 .logo{
@@ -72,6 +66,13 @@ header .button{
 
 button:hover{
     background-color: rgba(0,136,169,0.8);
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: flex-end; */
+    align-items: center;
+    max-width: 852px;
 }
 
 /* nav end */
@@ -368,10 +369,12 @@ main.container .box5{
 .box5 .flex1{
     font-size: 12px;
     width: 150px;
+    color: #7C8794;
 }
 .box5 .flex2{
     width: 150px;
     font-size: 12px;
+    color: #7C8794;
 }
 
 .box5 i{
