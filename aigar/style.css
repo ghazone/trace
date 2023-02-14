@@ -63,6 +63,13 @@ header button{
     text-decoration: none;
 }
 
+header button:hover{
+    background-color: #FFFFFF;
+    color: #366059;
+    border: 1px solid #366059;
+    transition: 0.3s;
+}
+
 /* Section Base */
 .container{
     max-width: 885px;
@@ -79,6 +86,10 @@ header button{
     line-height: 1.5;
     font-size: 40px;
     color: #213248;
+}
+
+.intro b{
+    color: #366059
 }
 
 .intro p{
@@ -161,36 +172,44 @@ main.hero{
     margin-top: -108px;
 }
 
+.hero-background .hero2{
+    position: relative;
+}
+
 .card {
     border-radius: 15px;
     background-color: #FBF9F7;
     /* margin-left: 145px; */
-    position: relative;
+    position: absolute;
     width: 120px;
     height: 76px;
-    right: 75px;
+    /* right: 75px;
     margin-top: -30px;
-    padding-top: 10px;
-    
+    padding-top: 10px; */
+    padding: 12px 16px;
+    top: 0;
+
 }
-  
+
+.card sup{
+    color: #F58041;
+}
+
 .card h4{
     font-size: 25px;
     padding-left: 10px;
     font-family: "inter", sans-serif;
+    color: #366059;
 }
 
 .card p{
     padding-left: 10px;
     font-size: 9px;
     font-family: "inter", sans-serif;
-}
-    
-.card .container {
-    padding: 2px 16px;
+    color: #90969E
 }
 
-.card2 {
+/* .card2 {
     border-radius: 15px;
     background-color: #FBF9F7;
     margin-left: 145px;
@@ -203,6 +222,14 @@ main.hero{
     padding-top: 10px;
 }
   
+.card2 b{
+    color: #366059
+}
+
+.card2 sup{
+    color: #F58041
+}
+
 .card2 h4{
     font-size: 25px;
     padding-left: 10px;
@@ -213,11 +240,12 @@ main.hero{
     padding-left: 10px;
     font-size: 9px;
     font-family: "inter", sans-serif;
+    color: #90969E
 }
     
 .card2 .container {
     padding: 2px 16px;
-}
+} */
 
 .sponsor{
     width: 853px;
@@ -264,7 +292,14 @@ main.hero{
     border-radius: 50px;
     outline: 1px solid #56746F;
     background-color: transparent;
+    color: #3F625B
   }
+
+.item1 button:hover{
+    background-color: transparent;
+    color: #366059;
+    border: 1px solid #366059;
+}
 
   .item2 {
     grid-column: 3;
@@ -275,6 +310,7 @@ main.hero{
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
+    background-color: #366059;
   }
 
   .item2 p{
@@ -295,6 +331,13 @@ main.hero{
     outline: 1px solid #FFFFFF;
     background-color: transparent;
     margin-top: 45px;
+    color: #FFFFFF;
+}
+
+.item2 button:hover{
+    background-color: #ffffff;
+    color: #366059;
+    transition: 0.3s;
 }
 
   .item3 {
@@ -302,6 +345,7 @@ main.hero{
     width: 170px;
     height: 163px;
     font-size: 12px;
+    background-color: #FFFFFF;
   }
 
   .item3 p{
@@ -311,7 +355,8 @@ main.hero{
   }
 
    .item4{
-    border-radius: 25px;    
+    border-radius: 25px;  
+    background-color: #56e8ff;  
    }
 
   .item5 {
@@ -324,7 +369,9 @@ main.hero{
     background-image: url("https://images.unsplash.com/photo-1674592309639-39067f6a8111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60");
   }
 
-
+.item5 p{
+    opacity: 0;
+}
 
 /* section deskripsi */
 section.deskripsi{
