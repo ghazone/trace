@@ -70,8 +70,8 @@ header button{
     width: 100%;
 }
 
-/* Section Intro */
 
+/* Section Intro */
 .intro h1{
     padding-bottom: 0px;
     font-family: "inter", sans-serif;
@@ -92,10 +92,10 @@ header button{
     max-width: 600px;
 }
 
+
 /* Section Hero */
 .hero-background{
-    /* padding-left: 10%; */
-    top: 125px;
+    top: 90px;
     position: relative;
     background-image: linear-gradient(to bottom,#F3F5F7, #F3F5F7, transparent);
 
@@ -167,9 +167,11 @@ main.hero{
     /* margin-left: 145px; */
     position: relative;
     width: 120px;
-    height: 60px;
+    height: 76px;
     right: 75px;
     margin-top: -30px;
+    padding-top: 10px;
+    
 }
   
 .card h4{
@@ -194,10 +196,11 @@ main.hero{
     margin-left: 145px;
     position: relative;
     width: 90px;
-    height: 60px;
-    margin-top: -50px;
+    height: 76px;
+    margin-top: -41px;
     left: 625px;
-    bottom: 225px;
+    bottom: 215px;
+    padding-top: 10px;
 }
   
 .card2 h4{
@@ -222,9 +225,10 @@ main.hero{
     margin-top: 25px;
 }
 
+
 /* Section */
 .grid-container {
-    margin-top: 5%;
+    margin-top: 128px;
     display: grid;
     gap: 10px;
     background-color: #D9D9D9;
@@ -243,9 +247,9 @@ main.hero{
     grid-column: 1;
     grid-row: 1;
     width: 300px;
-    /* padding-right: 90px; */
     font-size: 27px;
     font-weight: bold;
+    color: #213248;
   }
   
   .item1 button{
@@ -271,7 +275,6 @@ main.hero{
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
-    /* margin-left: 10px; */
   }
 
   .item2 p{
@@ -299,7 +302,6 @@ main.hero{
     width: 170px;
     height: 163px;
     font-size: 12px;
-    /* margin-left: 15px; */
   }
 
   .item3 p{
@@ -319,5 +321,72 @@ main.hero{
     height: 340px;
     border-radius: 25px;
     background-size: cover;
-    background-image: url("https://images.unsplash.com/photo-1583947215259-38e31be8751f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-image: url("https://images.unsplash.com/photo-1674592309639-39067f6a8111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60");
   }
+
+
+
+/* section deskripsi */
+section.deskripsi{
+    padding-top: 233px;
+    max-width: 706px;
+    margin: 0 auto;
+
+}
+
+.deskripsi .grid-deskripsi {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 60px 10px 60px 10px;
+}
+  
+.deskripsi .grid-deskripsi{
+    background-color: #ffffffcc;
+    text-align: left;
+    font-size: 30px;
+}
+
+.grid-deskripsi .des1{
+    font-size: 21px;
+    font-family: "inter", sans-serif;
+    color: #346159;
+    font-weight: bold;
+    margin-right: 62px;
+}
+
+.grid-deskripsi .des2{
+    font-size: 12px;
+    font-family: "inter", sans-serif;
+    color: #90969E;
+}
+
+.grid-deskripsi .des3 a{
+    padding: 10px 15px 10px 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #366059;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "inter", sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    color: #366059;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.grid-deskripsi .title{
+    grid-column: 1/3;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "inter", sans-serif;
+    color: #366059;
+}
+
+.grid-deskripsi .more a{
+    border-radius: 100%;
+    border: solid #FF7E35;
+    font-size: 20px;
+}
