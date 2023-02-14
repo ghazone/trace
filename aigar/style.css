@@ -19,8 +19,6 @@ header{
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 85px;
-    padding-right: 15px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -66,7 +64,7 @@ header button{
 
 /* Section Base */
 .container{
-    max-width: 957px;
+    max-width: 885px;
     margin: 0 auto;
 }
 
@@ -154,6 +152,11 @@ main.hero{
     margin-left: 50px; */
 }
 
+.hero-background .play{
+    margin-top: -60px;
+    margin-left: -50px;
+}
+
 .hero-background .gambar2{
     height: 386px;
     width: 290px;
@@ -195,7 +198,7 @@ main.hero{
     position: relative;
     width: 90px;
     height: 60px;
-    margin-top: -30px;
+    margin-top: -50px;
     left: 650px;
     bottom: 225px;
 }
