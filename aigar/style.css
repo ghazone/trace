@@ -19,7 +19,7 @@ header{
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    max-width: 1000px;
+    max-width: 885px;
     margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@ span{
 
 .logo{
     cursor: pointer;
-    /* margin-right: 0 auto; */
+    margin-right: 0 auto;
 }
 
 .nav__links{
@@ -66,6 +66,7 @@ header button{
 .container{
     max-width: 885px;
     margin: 0 auto;
+    width: 100%;
 }
 
 /* Section Intro */
@@ -97,7 +98,7 @@ header button{
 
 /* Section Hero */
 .hero-background{
-    padding-left: 10%;
+    /* padding-left: 10%; */
     top: 125px;
     position: relative;
     background-image: linear-gradient(to bottom,#F3F5F7, #F3F5F7, transparent);
