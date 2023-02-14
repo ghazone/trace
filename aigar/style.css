@@ -15,13 +15,13 @@ li, a {
 
 header{
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
 }
 
 header .container{
     display: flex;
     justify-content: space-between;
-    line
+    align-items: center;
 }
 
 span{
@@ -71,22 +71,19 @@ header button{
 }
 
 /* Section Intro */
-.intro{
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 .intro h1{
     padding-bottom: 0px;
     font-family: "inter", sans-serif;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1.5;
     font-size: 40px;
     color: #213248;
 }
 
 .intro p{
-    padding-top: 0px;
+    padding-top: 27px;
+    padding-bottom: 15px;
     font-family: "inter", sans-serif;
     line-height: 2.0;
     font-size: 12px;
@@ -171,7 +168,7 @@ main.hero{
     position: relative;
     width: 120px;
     height: 60px;
-    right: 50px;
+    right: 75px;
     margin-top: -30px;
 }
   
@@ -199,7 +196,7 @@ main.hero{
     width: 90px;
     height: 60px;
     margin-top: -50px;
-    left: 650px;
+    left: 625px;
     bottom: 225px;
 }
   
@@ -231,8 +228,7 @@ main.hero{
     display: grid;
     gap: 10px;
     background-color: #D9D9D9;
-    margin-right: 10%;
-    padding: 15px;
+    padding: 35px;
     border-radius: 35px;
   }
   
@@ -270,7 +266,7 @@ main.hero{
     grid-column: 3;
     grid-row: 1;
     border-radius: 25px;
-    width: 335px;
+    width: 324px;
     height: 163px;
     font-size: 16px;
     font-weight: bold;
@@ -319,9 +315,9 @@ main.hero{
   .item5 {
     grid-column: 2 / span 2;
     grid-row: 2;
-    width: 523px;
+    width: 504px;
     height: 340px;
     border-radius: 25px;
-    object-fit: cover;
-    background-image: url("https://images.unsplash.com/photo-1675619039310-82643c27ce65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=60");
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1583947215259-38e31be8751f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   }
