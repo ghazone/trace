@@ -123,8 +123,8 @@ section.content{
 main.hero{
     display: grid;
     font-family: "Public Sans", sans-serif;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
     margin-bottom: 35px;
 }
 sup{
@@ -166,11 +166,11 @@ main.hero ul li{
 }
 
 img.sponsor{
-    margin-bottom: 124px;
+    margin-bottom: 114px;
 }
 
 section.content .grid-1{
-    margin-right: 10px;
+    width: 155px;
 }
 
  .image1{
@@ -185,7 +185,7 @@ section.content .grid-1{
  .img{
     position: absolute;
     bottom: -25px;
-    left: -56px;
+    left: -40px;
 }
  .image2{
     margin-top: -106px;
@@ -197,7 +197,13 @@ section.content .grid-1{
 }
 main.hero .box-hero{
     position: relative;
+    text-align: end;
 }
+
+main.hero .box-hero-1{
+    position: relative;
+}
+
 main.hero .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -210,7 +216,7 @@ main.hero .card {
     right:  -53.2px;
   }
 
-main.hero .card h1{
+main.hero .card h4{
     color: #376058;
     font-family: "Public Sans",sans-serif;
     font-size:25px;
@@ -242,7 +248,7 @@ main.hero .card2 {
     right: -14.2px;
   }
 
-main.hero .card2 h1{
+main.hero .card2 h4{
     color: #376058;
     font-family: "Public Sans",sans-serif;
     font-size: 25px;
@@ -265,15 +271,16 @@ main .box-container{
     justify-content: center;
     max-width: 960.6px;
     margin: 0 auto;
-    padding: 35px;
+    padding: 39px 35px 35px 41px;
 }
 main.container{
 
 }
 
-main .box-container .box1{
+main .box-container .box1 h1{
     font-size: 27px;
     font-family:"Public Sans", sans-serif ;
+    width: 300px;
 }
 
 .box1 .btn{
@@ -285,7 +292,7 @@ main .box-container .box1{
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-
+    width: 73px;
     font-family: "Public Sans", sans-serif;
     font-weight: 500;
     font-size: 12px;
@@ -299,7 +306,7 @@ main .box-container .box1{
 }
 .box1 .btn1{
     margin-top: 20px;
-    margin-right:10px ;
+    margin-right:5px ;
     padding: 10px;
     background-color: #E9E9E9;
     border:solid thin #56746F;
@@ -328,7 +335,7 @@ main .box-container .box1{
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-
+    width: 105px;
     font-family: "Public Sans", sans-serif;
     font-weight: 500;
     font-size: 12px;
@@ -364,7 +371,7 @@ main .box-container .box3{
 
 main .box-container .box4{
     grid-column:2/4;
-    background-image: url('https://images.unsplash.com/photo-1583947215259-38e31be8751f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-image: url('https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHByb2R1Y3R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
     background-repeat: no-repeat;
     background-size:cover;
     height: 340px;
@@ -377,7 +384,8 @@ main .box-container .box5{
     align-items: end;
     border-radius: 25px;
     justify-content:baseline;
-    gap: 50px;
+    gap: 25px;
+    padding: 0px 30px 0px 0px;
 }
 .box5 .flex1{
     font-size: 12px;
@@ -485,7 +493,7 @@ section.deskripsi{
     background-color: #366059;
     color: #e9e9e9;
 }
-.title h1{
+.title h2{
     font-size: 27px;
     font-weight: bold;
     color: #366158;
@@ -595,7 +603,7 @@ section.bio .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: #F3F5F7;
-    padding: 30px;
+    padding: 35px;
     max-width:928px;
     margin:0 auto;
     border-radius:35px;
@@ -620,9 +628,10 @@ section.bio .grid-container {
     height: 55px;
     margin-left: -5px;
   }
-  section.bio .grid-item1 {
+  section.bio .grid-item-1 {
+
   }
-  section.bio .grid-item1 img{
+  section.bio .grid-item-1 img{
   width:315px;
   height:408px;
   object-fit:cover;
