@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Public Sans", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 /* nav start */
@@ -307,11 +307,7 @@ main .box-container .box1 h1{
     background-color: #E9E9E9;
     border:solid thin #56746F;
     border-radius: 25px;
-    cursor: pointer;
     transition: all 0.3s ease 0s;
-
-    font-family: "Public Sans", sans-serif;
-    font-weight: 500;
     font-size: 12px;
     color: #56746F;
     text-decoration: none;
@@ -466,6 +462,8 @@ section.deskripsi{
     padding: 20px;
     font-size: 12px;
     width: 369px;
+    color: #758191;
+    line-height: 15px;
   }
 
 .text-item3 {
@@ -511,9 +509,8 @@ section.deskripsi{
     padding-top: 15px;
     text-align: right;
     line-height:2;
-    color: #476A65;
   }
-  .plus a{
+  .plus .button{
     padding: 10px 14px 10px 14px;
     margin-right: 10px;
     border-radius: 100%;
@@ -523,7 +520,7 @@ section.deskripsi{
     text-align: center;
     color: #FF7E35;
   }
-  .plus a:hover{
+  .plus .button:hover{
     background-color: #FF7E35;
     color: #e9e9e9;
 }
