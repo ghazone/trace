@@ -290,14 +290,10 @@ main .box-container .box1 h1{
     background-color: #E9E9E9;
     border:solid thin #56746F;
     border-radius: 25px;
-    cursor: pointer;
     transition: all 0.3s ease 0s;
     width: 73px;
-    font-family: "Public Sans", sans-serif;
-    font-weight: 500;
     font-size: 12px;
     color: #56746F;
-    text-decoration: none;
 }
 
 .box1 .btn:hover{
@@ -469,6 +465,7 @@ section.deskripsi{
 .text-item2 {
     padding: 20px;
     font-size: 12px;
+    width: 369px;
   }
 
 .text-item3 {
@@ -644,6 +641,7 @@ section.bio .grid-container {
 section.quotes .container{
     max-width: 739px;
     margin: 130px auto 49px auto;
+    position: relative;
 }
 
 section.quotes h1{
@@ -659,8 +657,8 @@ section.quotes .star{
     top: 6px;
 }
 section.quotes .mail{
-    position: relative;
-    top: -70px;
-    left: 530px;
+    position: absolute;
+    bottom:-20px;
+    right: 120px;
 }
 /* section quotes */
