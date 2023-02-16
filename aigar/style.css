@@ -615,6 +615,8 @@ section.deskripsi{
     grid-template-columns: auto auto auto auto;
     overflow-x: hidden;
     margin: 0 auto;
+    gap: 22px;
+    margin-left: 15%;
 }
 
 .member .sedang img{
@@ -622,7 +624,6 @@ section.deskripsi{
     height: 270px;
     background-color: #90969E;
     border-radius: 20px;
-    margin-right: 22px;
     object-fit: cover;
 }
 
@@ -631,7 +632,6 @@ section.deskripsi{
     height: 310px;
     background-color: #90969E;
     border-radius: 20px;
-    margin-right: 22px;
     object-fit: cover;
 }
 
@@ -640,7 +640,6 @@ section.deskripsi{
     height: 252px;
     background-color: #90969E;
     border-radius: 20px;
-    margin-right: 22px;
     object-fit: cover;
 }
 
@@ -664,21 +663,163 @@ section.deskripsi{
 
 .quote{
     padding-top: 146px;
+    margin-bottom: 70px;
+}
+
+.quotes{
     max-width: 718px;
     margin: 0 auto;
 }
 
-.quote h2{
+.quotes h2{
     font-size: 48px;
     font-weight: bold;
     font-family: "inter", sans-serif;
     text-align: center; 
     line-height: 1.6;
     position: relative;
+    margin-bottom: 120px;
 }
 
-.quote .mail{
-    /* position: absolute; */
+.quotes .mail{
     margin-bottom: -28px;
-    /* right: 0; */
+}
+
+.kata{
+    max-width: 930px;
+    background-color: #F3F5F7;
+    border-radius: 35px;
+    margin: 0 auto;
+    padding: 45px 45px 0px 45px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 38px;
+}
+
+.kata .quot{
+    font-size: 40px;
+    color: #FF7E35;
+}
+
+.kata h4{
+    padding-top: 20px;
+    font-size: 21px;
+    font-family: "inter", sans-serif;
+    /* width: 496px; */
+    line-height: 1.4;
+    color: #3C635C;
+}
+
+.kata p{
+    padding-top: 34px;
+    font-size: 15px;
+    font-family: "inter", sans-serif;
+}
+
+.kata img{
+    width: 300px;
+    height: 382px;
+    object-fit: cover;
+    margin-top: -90px;
+}
+
+/* Section Footer */
+
+.footer{
+    background-color: #ffffff;
+    margin-bottom: 70px;
+}
+
+.footer .bottom{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 850px;
+    margin: 0 auto;
+    gap: 55px;
+}
+
+.bottom .navigation{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "inter", sans-serif;
+}
+
+.navigation h4{
+    padding-bottom: 12px;
+}
+
+.bottom .navigation .pe{
+    font-size: 12px;
+    font-family: "inter", sans-serif;
+    color: #A3A3A3;
+    line-height: 1.4;
+    display: flex;
+    gap: 28px;
+}
+
+.navigation .btn{
+    margin-top: 18px;
+    font-size: 12px;
+    font-family: "inter", sans-serif;
+    color: #FFFFFF;
+    background-color: #FF7E35;
+    padding: 10px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0px;
+}
+
+.pe ul{
+    line-height: 1.6;
+    list-style: none;
+}
+
+.john{
+    width: 460px;
+    margin: 0 auto;
+    text-align: center;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.john h4{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.john p{
+    padding-top: 20px;
+    color: #A3A3A3;
+    font-size: 12px;
+    width: 320px;
+    margin: 0 auto;
+    font-family: "inter", sans-serif;
+}
+
+.contact{
+    
+}
+
+.contact h4{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "inter", sans-serif;
+    padding-bottom: 10px;
+}
+
+.contact p{
+    padding-top: 10px;
+    color: #A3A3A3;
+    font-size: 12px;
+    width: 320px;
+    margin: 0 auto;
+    font-family: "inter", sans-serif;
+}
+
+.contact img{
+    padding-top: 26px;
 }
