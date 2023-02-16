@@ -263,9 +263,10 @@ main.container{
 
 }
 
-main .box-container .box1 h1{
+main .box-container .box1 h3{
     font-size: 27px;
     width: 300px;
+    color:#263348;
 }
 
 .box1 .btn{
@@ -277,6 +278,7 @@ main .box-container .box1 h1{
     border-radius: 25px;
     transition: all 0.3s ease 0s;
     width: 73px;
+    cursor: pointer;
     font-size: 12px;
     color: #56746F;
 }
@@ -785,7 +787,7 @@ footer .grid-container {
   }
 
 footer .grid-item .button{
-    margin-top:30px ;
+    margin-top:34px ;
     padding: 10px 18px;
     background-color: #FF7E35;
     border: none;
@@ -799,9 +801,8 @@ footer .grid-item .button{
 }
 
 footer .grid-item .button:hover{
-    background-color: #ffffff;
-    color: #FF7E35;
-    border: solid thin #FF7E35;
+    background-color: #944403;
+    color: #FFFFFF;
 }
 
   footer .grid-item1 {
@@ -813,7 +814,6 @@ footer .grid-item .button:hover{
   }
   footer .grid-item1 h4{
   font-size:16px;
-  margin-bottom: 30px;
   color: #32455C;
   display: flex;
   align-items: center;
@@ -826,13 +826,13 @@ footer .grid-item .button:hover{
     }
 
   footer .grid-item1 p{
+    padding-top: 30px;
   font-size:11px;
   line-height: 1.6;
   color: #717B88;
   }
 
-  footer .grid-item1 p.copirek{
-    margin-top: 27px;
+  footer .grid-item1 p.copyright{
     color: #737D8C;
     }
 
@@ -849,6 +849,7 @@ footer .grid-item .button:hover{
   color: #737D8C;
   }
   footer .grid-item2 img{
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-right: 8px;
   }
 /* footer */
