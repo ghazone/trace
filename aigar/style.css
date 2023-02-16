@@ -588,7 +588,7 @@ section.deskripsi{
 
 .team{
     padding-top: 136px;
-    max-width: 852px;
+    /* max-width: 852px; */
     margin: 0 auto;
 }
 
@@ -607,6 +607,58 @@ section.deskripsi{
     text-align: center;
     color: #90969E;
 }
+
+.member{
+    max-width: 958px;
+    padding-top: 63px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+.member .sedang img{
+    width: 270px;
+    height: 270px;
+    background-color: #90969E;
+    border-radius: 20px;
+    margin-right: 22px;
+    object-fit: cover;
+}
+
+.member .besar img{
+    width: 270px;
+    height: 310px;
+    background-color: #90969E;
+    border-radius: 20px;
+    margin-right: 22px;
+    object-fit: cover;
+}
+
+.member .kecil img{
+    width: 270px;
+    height: 252px;
+    background-color: #90969E;
+    border-radius: 20px;
+    margin-right: 22px;
+    object-fit: cover;
+}
+
+.member h4{
+    margin-top: 16px;
+    font-size: 21px;
+    font-family: "inter", sans-serif;
+    font-weight: bold;
+}
+
+.member p{
+    margin-top: 6px;
+    font-size: 12px;
+    font-family: "inter", sans-serif;
+    font-weight: bold;
+    color: #788391;
+}
+
 
 /* Section Quote */
 
