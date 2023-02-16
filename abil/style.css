@@ -9,7 +9,6 @@
 /* nav start */
 
 li, a{
-    font-family: "Public Sans", sans-serif;
     font-weight: 500;
     font-size: 12px;
     color: #90969E;
@@ -19,7 +18,6 @@ li, a{
 span{
     align-items: center;
     display: flex;
-    font-family: "Public Sans", sans-serif;
     font-weight: bold;
     font-size: 16px;
 }
@@ -57,8 +55,6 @@ header .button{
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-
-    font-family: "Public Sans", sans-serif;
     font-weight: 500;
     font-size: 12px;
     color: #edf0f1;
@@ -93,7 +89,6 @@ section.intro{
 }
 
 section.intro h1{
-    font-family: "Public Sans",sans-serif;
     font-size: 42px;
     line-height: 54.6px;
     color: #213248;
@@ -104,7 +99,6 @@ section.intro h1 b{
 }
 
 section.intro p{
-    font-family: "Public Sans",sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
@@ -117,12 +111,10 @@ section.intro p{
 /* section content */
 section.content{
     background-image: linear-gradient(180deg,#f3f5f7,#f3f5f7,transparent);
-    font-family: "Public Sans", sans-serif;
 }
 
 main.hero{
     display: grid;
-    font-family: "Public Sans", sans-serif;
     grid-template-columns: auto auto auto;
     gap: 20px;
     margin-bottom: 35px;
@@ -135,7 +127,6 @@ main.hero ul li{
     padding-top: 20px;
     list-style:none;
     line-height: 24px;
-    font-family: "Public Sans", sans-serif;
     font-size: 17px;
 }
 
@@ -218,12 +209,10 @@ main.hero .card {
 
 main.hero .card h4{
     color: #376058;
-    font-family: "Public Sans",sans-serif;
     font-size:25px;
     line-height: 1.4;
 }
 main.hero .card p{
-    font-family: "Public Sans",sans-serif;
     font-size:9px;
 }
   
@@ -233,7 +222,6 @@ main.hero .card:hover {
   
 main.hero .inner-box {
     padding:10px 0px 17px 16px;
-    font-family: "Public Sans", sans-serif;
   }
 
 main.hero .card2 {
@@ -250,11 +238,9 @@ main.hero .card2 {
 
 main.hero .card2 h4{
     color: #376058;
-    font-family: "Public Sans",sans-serif;
     font-size: 25px;
 }
 main.hero .card2 p{
-    font-family: "Public Sans",sans-serif;
     font-size: 9px;
 }
   
@@ -279,7 +265,6 @@ main.container{
 
 main .box-container .box1 h1{
     font-size: 27px;
-    font-family:"Public Sans", sans-serif ;
     width: 300px;
 }
 
@@ -301,15 +286,15 @@ main .box-container .box1 h1{
     color: #e9e9e9;
 }
 .box1 .btn1{
-    margin-top: 20px;
-    margin-right:5px ;
     padding: 10px;
-    background-color: #E9E9E9;
-    border:solid thin #56746F;
+    background-color: #e9e9e9;
+    border: solid thin #366059;
     border-radius: 25px;
     transition: all 0.3s ease 0s;
+    width: 105px;
+    font-weight: 500;
     font-size: 12px;
-    color: #56746F;
+    color: #366059;
     text-decoration: none;
 }
 
@@ -328,7 +313,6 @@ main .box-container .box1 h1{
     cursor: pointer;
     transition: all 0.3s ease 0s;
     width: 105px;
-    font-family: "Public Sans", sans-serif;
     font-weight: 500;
     font-size: 12px;
     color: #ffffff;
@@ -342,23 +326,81 @@ main .box-container .box1 h1{
 
 main .box-container .box2{
     font-size: 12px;
-    font-family:"Public Sans", sans-serif ;
     background: #FFFFFF;
     border-radius: 25px;
     line-height: 18px;
     padding: 18px;
     height: 164px;
+    position: relative;
+    color: #3A6058;
 }
 
+main .box-container .box2 .port{
+    position: absolute;
+    bottom: 17px;
+    left: 17px;
+    border: 2px solid #FFFFFF;
+    border-radius: 100%;
+}
+
+main .box-container .box2 .port-2{
+    position: absolute;
+    bottom: 17px;
+    left: 43.5px;
+    border: 2px solid #FFFFFF;
+    border-radius: 100%;
+}
+
+main .box-container .box2 .port-3{
+    position: absolute;
+    bottom: 17px;
+    left: 69.5px;
+    border: 2px solid #FFFFFF;
+    border-radius: 100%;
+}
+
+main .box-container .box2 .port-4{
+    position: absolute;
+    bottom: 17px;
+    left: 95.5px;
+    border: 2px solid #FFFFFF;
+    border-radius: 100%;
+}
+
+main .box-container .box2 i{
+    position: absolute;
+    bottom: 30px;
+    left: 138px;
+    font-size: 15px;
+    color: #FF7E35;
+}
+
+
 main .box-container .box3{
-    font-size: 20px;
-    font-family:"Public Sans", sans-serif ;
+    font-size: 16px;
     background: #366059;
     border-radius: 25px;
     line-height: 19.36px;
     color: #FFFFFF;
     padding: 20px;
     height: 164px;
+    position: relative;
+}
+
+main .box-container .box3 p{
+    width: 172px;
+}
+
+main .box-container .box3 .shape{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+main .box-container .box3 .star{
+    position: absolute;
+    bottom: 15px;
+    right: 14px;
 }
 
 main .box-container .box4{
@@ -377,7 +419,7 @@ main .box-container .box5{
     border-radius: 25px;
     justify-content:baseline;
     gap: 25px;
-    padding: 0px 30px 0px 0px;
+    padding: 0px 36px 0px 0px;
 }
 .box5 .flex1{
     font-size: 12px;
@@ -405,7 +447,6 @@ section.deskripsi{
     margin:0 auto;
     max-width:707.5px;
     margin-top:133px ;
-    font-family:"Public Sans", sans-serif ;
     margin-bottom: 134px;
 }
 .text-container{
@@ -506,12 +547,12 @@ section.deskripsi{
     line-height: 1.5;
 }
   .plus{
-    padding-top: 15px;
+    padding-top: 18px;
     text-align: right;
     line-height:2;
   }
   .plus .button{
-    padding: 10px 14px 10px 14px;
+    padding: 5px 7.5px;
     margin-right: 10px;
     border-radius: 100%;
     border:solid #FF7E35;
@@ -526,24 +567,30 @@ section.deskripsi{
 }
 .minus{
     padding-top: 15px;
-    text-align: right;
+    text-align: left;
     line-height:2;
-    color: #476A65;
+    position: relative;
   }
   .minus a{
+    position: absolute;
+    top: 39px;
+    right: 0px;
+  }
+
+  .minus i{
+    font-size: 20px;
+    padding: 6.5px 7.5px;
     margin-right: 10px;
     border-radius: 100%;
     transition: all 0.4s ease 0s;
-    font-size: 20px;
+
     text-align: center;
     color: #ffffff;
     background-color: #FF7E35;
     border:solid #FF7E35;
-    padding: 10px 14px 10px 14px;
-    position: relative;
-    top: -140px;
   }
-  .minus a:hover{
+
+  .minus i:hover{
     background-color: #ffffff;
     color: #FF7E35;
 }
@@ -551,7 +598,7 @@ section.deskripsi{
 .minus img{
     width: 170px;
     height: 184px;
-    margin-right: 10px;
+    margin-left: -80px;
     border-radius: 22px;
     object-fit: cover;
 }
@@ -564,8 +611,6 @@ section.deskripsi{
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.8s ease 0.3s;
-
-    font-family: "Public Sans", sans-serif;
     font-weight: 500;
     font-size: 12px;
     color: #edf0f1;
@@ -578,13 +623,11 @@ section.deskripsi{
 .judul{
     text-align: center;
     font-size: 21px;
-    font-family: "Public Sans", sans-serif;
     line-height: 2.2;
 }
 .subtext{
     text-align: center;
     font-size: 12px;
-    font-family: "Public Sans", sans-serif;
     line-height: 1.5;
 }
 /* Section deskripsi */
