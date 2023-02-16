@@ -123,37 +123,18 @@ main.hero{
     width: 205px;
 }
 
-.hero-background .star-eight {
-    background: #FF7E35;
-    top: -20px;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    text-align: center;
-    -webkit-transform: rotate(0deg);
-       -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-         -o-transform: rotate(0deg);
-}
-
-.hero-background .star-eight:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 40px;
-    width: 40px;
-    background: #FF7E35;
-    -webkit-transform: rotate(135deg);
-       -moz-transform: rotate(135deg);
-        -ms-transform: rotate(135deg);
-         -o-transform: rotate(135deg);
+.menu img{
+    margin-top: -20px;
 }
 
 .hero-background ul{
     list-style: none;
     line-height: 2.5;
     font-family: "inter", sans-serif;
+}
+
+.hero-background ul li{
+    padding-top: 5px;
 }
 
 .hero-background .gambar1{
@@ -262,17 +243,19 @@ main.hero{
     width: 853px;
     height: 30px;
     margin-top: 47px;
+    margin-bottom: 128px;
 }
 
 
 /* Section */
 .grid-container {
-    margin-top: 128px;
+    max-width: 956px;
     display: grid;
     gap: 10px;
     background-color: #D9D9D9;
     padding: 35px;
     border-radius: 35px;
+    margin: 0 auto;
   }
   
   .grid-item {
@@ -286,7 +269,7 @@ main.hero{
     padding: 0px 20px 0px 0px;
     grid-column: 1;
     grid-row: 1;
-    width: 270px;
+    width: 275px;
     font-size: 27px;
     font-weight: bold;
     color: #213248;
@@ -299,7 +282,7 @@ main.hero{
     text-decoration: none;
     display: inline-block;
     font-size: 11px;
-    margin: 4px 2px;
+    margin: 14px 2px;
     cursor: pointer;
     border-radius: 50px;
     outline: 1px solid #56746F;
@@ -318,13 +301,21 @@ main.hero{
     grid-column: 3;
     grid-row: 1;
     border-radius: 25px;
-    width: 350px;
+    width: 346px;
     height: 163px;
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
     background-color: #366059;
+    position: relative;
   }
+
+.item2 .vector{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
 
   .item2 p{
     margin-right: 90px;
@@ -353,6 +344,13 @@ main.hero{
     transition: 0.3s;
 }
 
+.item2 .star{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+
+}
+
   .item3 {
     padding: 20px;
     border-radius: 25px;
@@ -360,19 +358,60 @@ main.hero{
     height: 163px;
     font-size: 12px;
     background-color: #FFFFFF;
+    position: relative;
   }
 
   .item3 p{
     color: #3E635D;
-    font-weight: lighter;
+    font-weight: 600;
     margin-right: 5px;
   }
 
+.item3 .El1{
+    position: absolute;
+    bottom: 17px;
+    left: 15px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.item3 .El2{
+    position: absolute;
+    bottom: 17px;
+    left: 40px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.item3 .El3{
+    position: absolute;
+    bottom: 17px;
+    left: 65px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.item3 .El4{
+    position: absolute;
+    bottom: 17px;
+    left: 90px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.item3 a{
+    position: absolute;
+    color: #FF7E35;
+    bottom: 17px;
+    right: 20px;
+    font-size: 25px;
+}
+
    .item4{
-    padding: 20px 20px 0px 20px;
+    /* padding: 20px 20px 0px 0px; */
     border-radius: 25px;  
     background-color: transparent;  
-    width: 270px;
+    /* width: 320px; */
     display: flex;
     align-items: end;
     gap: 25px;
@@ -382,7 +421,6 @@ main.hero{
 .item4 .icon1{
     font-size: 30px;
     background-color: #FF7E35;
-    /* width: 40px; */
     padding: 9px 12px 9px 11px;
     border-radius: 12px;
     color: white;
@@ -391,7 +429,6 @@ main.hero{
 .item4 .icon2{
     font-size: 30px;
     background-color: #FF7E35;
-    /* width: 40px; */
     padding: 9px 12px 9px 12px;
     border-radius: 12px;
     color: white;
@@ -400,7 +437,7 @@ main.hero{
 .item4 p{
     font-size: 12px;
     color: #90969E;
-    width: 105px;
+    width: 160px;
     margin-top: 10px;
 }
 
@@ -408,7 +445,7 @@ main.hero{
     padding: 20px;
     grid-column: 2 / span 2;
     grid-row: 2;
-    width: 535px;
+    width: 531px;
     height: 340px;
     border-radius: 25px;
     background-size: cover;
@@ -519,6 +556,8 @@ section.deskripsi{
     background-color: #346159;
     padding: 10px 17px;
     border-radius: 5px;
+    cursor: pointer;
+    border: 0px;
 }
 
 .min{
@@ -529,6 +568,7 @@ section.deskripsi{
     width: 170px;
     height: 185px;
     border-radius: 22px;
+    margin-right: 26px;
 }
 
 .min a{
