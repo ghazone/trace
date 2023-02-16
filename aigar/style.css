@@ -583,3 +583,50 @@ section.deskripsi{
     position: relative;
     top: -150px;
 }
+
+/* Section Team */
+
+.team{
+    padding-top: 136px;
+    max-width: 852px;
+    margin: 0 auto;
+}
+
+.none h4{
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "inter", sans-serif;
+    text-align: center;    
+}
+
+.none p{
+    margin-top: 12px;
+    font-size: 12px;
+    /* font-weight: 400; */
+    font-family: "inter", sans-serif;
+    text-align: center;
+    color: #90969E;
+}
+
+/* Section Quote */
+
+.quote{
+    padding-top: 146px;
+    max-width: 718px;
+    margin: 0 auto;
+}
+
+.quote h2{
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "inter", sans-serif;
+    text-align: center; 
+    line-height: 1.6;
+    position: relative;
+}
+
+.quote .mail{
+    /* position: absolute; */
+    margin-bottom: -28px;
+    /* right: 0; */
+}
