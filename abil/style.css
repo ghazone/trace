@@ -70,6 +70,7 @@ header .container{
     /* justify-content: flex-end; */
     align-items: center;
     max-width: 852px;
+    margin: 0 auto;
 }
 
 /* nav end */
@@ -853,3 +854,114 @@ footer .grid-item .button:hover{
     margin-right: 8px;
   }
 /* footer */
+
+@media only screen and (max-width:768px) {
+
+
+    header .container{
+        max-width:658px;
+        margin: 0 auto;
+    }
+    
+    /* nav end */
+    
+    /* section base */
+    .container{
+        max-width:658px;
+        margin: 0 auto;
+    }
+
+    section.intro h1{
+        font-size: 35px;
+        line-height: 54.6px;
+        color: #213248;
+        font-weight:bold;
+    }
+    section.intro h1 b{
+        color: #366059
+    }
+    
+    section.intro p{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #ACB3BE;
+        max-width: 511px;
+    }
+
+    /* Hero */
+
+    main.hero{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        margin-bottom: 35px;
+    }
+
+    section.content .grid-1{
+        grid-column: 1/3;
+        margin-bottom: 140px;
+        width: auto;
+    }
+
+    sup{
+        color: #ff7e35
+    }
+
+    main.hero ul {
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        columns: 2;
+      }
+    
+    main.hero ul li{
+
+        list-style:none;
+        line-height: 24px;
+        font-size: 17px;
+    }
+    
+    .image1{
+        border-radius: 25px;
+        object-fit: cover;
+        height: 312px;
+        width: 297px;
+        margin-bottom: 25px;
+        
+    }
+
+     .image2{
+        border-radius: 25px;
+        object-fit: cover;
+        width: 290px;
+        height: 390px;
+    
+    }
+    .img{
+        position: absolute;
+        top: 40px;
+        left: 100px;
+    }
+
+    main.hero .box-hero {
+        position: relative;
+        text-align:start;
+    }
+
+    main.hero .box-hero-1{
+        position: relative;
+        margin-left: -42px;
+    }
+    main.hero .card{
+        position: absolute;
+        top: -22px;
+        right:  -25.2px;
+    }
+
+    main.hero .card2{
+        position: absolute;
+        top: 65px;
+        right: 14.2px;
+    }
+
+}
