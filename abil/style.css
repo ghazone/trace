@@ -100,6 +100,7 @@ section.intro h1 b{
 }
 
 section.intro p{
+    margin-top: revert;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
@@ -252,9 +253,7 @@ main.hero .card2:hover {
 main .box-container{
     background-color:#E9E9E9;
     border-radius: 35px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows:515px;
+    display: flex;
     gap: 10px;
     justify-content: center;
     max-width: 960.6px;
@@ -307,7 +306,7 @@ main .box-container .box1 h3{
     color: #e9e9e9;
 }
 
- .btn1{
+.box3 .btn1 {
     margin-top: 50px;
     margin-right:10px ;
     padding: 10px;
@@ -329,8 +328,8 @@ main .box-container .box1 h3{
 }
 
 main .box-container .adv-box{
-    display: grid;
-    grid-template-columns: 176px 338px;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -341,6 +340,7 @@ main .box-container .box2{
     line-height: 18px;
     padding: 18px;
     height: 164px;
+    width: 176px;
     position: relative;
     color: #3A6058;
 }
@@ -391,6 +391,7 @@ main .box-container .box3{
     background: #366059;
     border-radius: 25px;
     line-height: 19.36px;
+    width: 338px;
     color: #FFFFFF;
     padding: 20px;
     height: 164px;
@@ -414,7 +415,6 @@ main .box-container .box3 .star{
 }
 
 main .box-container .box4{
-    grid-column:1/3;
     background-image: url('https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHByb2R1Y3R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
     background-repeat: no-repeat;
     background-size:cover;
@@ -450,6 +450,13 @@ main .box-container .box5{
     color: #FFFFFF;
     margin-bottom: 10px;
 }
+
+.motto-box{
+    display: flex;
+    gap: 10px;
+    
+}
+
 /* section content */
 
 /* Section deskripsi */
@@ -864,7 +871,7 @@ footer .grid-item .button:hover{
 
 @media only screen and (max-width:768px) {
 
-
+    /* head */
     header .container{
         max-width:658px;
         margin: 0 auto;
@@ -876,6 +883,13 @@ footer .grid-item .button:hover{
     .container{
         max-width:658px;
         margin: 0 auto;
+    }
+
+    /* Intro text */
+
+    section.intro{
+        /* padding: 30px 10% ; */
+        margin-bottom: 70px;
     }
 
     section.intro h1{
@@ -896,7 +910,9 @@ footer .grid-item .button:hover{
         max-width: 511px;
     }
 
-    /* Hero */
+    /* Intro Text */
+
+    /* Hero section */
 
     main.hero{
         display: grid;
@@ -931,9 +947,10 @@ footer .grid-item .button:hover{
     .image1{
         border-radius: 25px;
         object-fit: cover;
-        height: 312px;
-        width: 297px;
+        height: 390px;
+        width: 290px;
         margin-bottom: 25px;
+        margin-top: -107px;
         
     }
 
@@ -957,18 +974,259 @@ footer .grid-item .button:hover{
 
     main.hero .box-hero-1{
         position: relative;
-        margin-left: -42px;
+        margin-left: -50px;
     }
     main.hero .card{
         position: absolute;
-        top: -22px;
-        right:  -25.2px;
+        right: 190.8px;
+        top: 192px;
     }
 
     main.hero .card2{
         position: absolute;
-        top: 65px;
-        right: 14.2px;
+        right: 60.2px;
+        top: 192px;
+
     }
 
+    /* Hero Section */
+    
+
+    /* Advantages section */
+    main.Advantages .box-container{
+        display: flex;
+        flex-direction: column;
+        max-width: 696px;
+    }
+
+    main.Advantages .box-container .box1{
+        margin-bottom: 40px;
+    }
+
+    main.Advantages .box-container .box1 h3{
+        font-size: 27px;
+        width: auto;
+        color:#263348;
+    }
+
+    main.Advantages .box-container .box5{
+        height: 120px;
+    }
+
+    .box1 .flex1{
+        width: 200px;
+        margin-right: 113px;
+    }
+    .box1 .flex2{
+        width: 246px;
+    }
+    main .box-container .box2{
+        width: 190px;
+    }
+    main .box-container .box3{
+        width: 416px;
+    }
+
+    img.sponsor{
+        width: 682px;
+        margin-left: -12px;
+    }
+
+    /* Section Deskripsi */
+
+    section.deskripsi{
+        max-width:601px;
+        margin-top: 80px;
+    }
+
+    .text-container{
+        display: flex;
+        gap:10px;
+        margin-bottom: 45px;
+    }
+
+    /* plus button */
+
+    .plus .button{
+        padding: 2.5px 5px;
+        font-size: 17px;
+    }
+
+    /* plus button */
+
+    /* description 1 */
+    .text-container{
+        display: flex;
+        gap:25px;
+        margin-bottom: 45px;
+    }
+
+    .text-item {
+        font-size: 18px;
+        width: auto;
+      }
+
+      .text-item2 {
+        padding: 20px 0px 0px 0px;
+        width: 319px;
+    }
+
+      .text-item3{
+        padding: 5px 0 0 0;
+      } 
+    /* deskription 1 */
+
+    /* description 2 */
+
+    .text-container-2{
+        display: flex;
+        padding: 19px 0px 0px 0px;
+        gap:10px;
+        margin-bottom: 31px;
+    }
+
+    .title h2{
+        font-size: 24px;
+    }
+    .text-container-2 .title {
+        flex: 1 1 100%;
+        max-width: none;
+      }
+    /* description 2 */
+
+    /* description 3 */
+
+    .text-container-3{
+        display: flex;
+    }
+
+    .text-container-3 .title p{
+        max-width:323px ;
+        line-height: 21px;
+      }
+
+      .minus img {
+        width: 144.5px;
+        margin-left: 54px;
+    }
+    
+    .minus a{
+        right: -71px;
+    }
+    
+    .minus i {
+        font-size: 18px;
+        padding: 3.5px 4.5px;
+    }
+    
+    .title button {
+        padding: 10px 14px;
+    }
+
+    /* description 3 */
+
+
+    /* description 4 */
+
+    .text-container-4{
+        display: flex;
+    }
+
+    .text-container-4 .title{
+        flex: 1 1 100%;
+        max-width: none;
+    }
+
+    /* description 4 */
+
+
+    /* description 5 */
+
+    .text-container-5{
+        display: flex;
+    }
+
+    .text-container-5 .title{
+        flex: 1 1 100%;
+        max-width: none;
+    }
+
+    /* description 5 */
+
+
+    /* team section */
+    /* team section */
+
+
+    /* quotes section */
+
+    section.quotes .container{
+        max-width: 591px ;
+    }
+
+    section.quotes .star{
+        width: 40px;
+        height: 40px;
+    }
+
+    section.quotes .mail{
+        margin-bottom: -48px;
+    }
+
+    section.quotes .container h1{
+        font-size: 40px;
+    }
+    /* quotes section */
+
+
+    /* bio section */
+    section.bio{
+        margin: 117px 0 100px 0;
+    }
+
+    section.bio .grid-container{
+        max-width:702px ;
+        height: 266px;
+        justify-content: space-between;
+    }
+    section.bio .grid-item p {
+        font-size: 16px;
+        max-width: 368px ;
+        margin-bottom: 31px;
+    }
+
+    section.bio .grid-item img {
+     width: 36px;
+     height: 48px;
+     object-fit: cover;
+     margin-left: 0px;   
+    }
+
+    section.bio .grid-item span {
+        font-size: 12px;
+        color: #273549;
+    }
+
+    section.bio .grid-item-1 img {
+        width: 227px;
+        height: 318px;
+        margin-top: -87.5px;
+    }
+    /* bio section */
+
+    /* footer */
+    footer .grid-container{
+        max-width: 695px;
+        grid-template-columns: auto 339px auto;
+        gap: 37px;
+    }
+
+    footer .grid-item1 {
+        padding: 0 10px;
+    }
+
+    footer .grid-item2 img{
+        margin-right:0;
+    }
+    /* footer */
 }
