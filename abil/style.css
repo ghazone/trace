@@ -153,6 +153,14 @@ main.hero .star{
 }
 
 img.sponsor{
+    
+}
+
+.new-sponsor{
+    max-width: 863px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 114px;
 }
 
@@ -774,7 +782,7 @@ section.quotes .mail{
 
 
 
-footer .grid-container {
+.footer .grid-container {
     display: grid;
     grid-template-columns: auto 435px auto;
     max-width: 851px ;
@@ -786,14 +794,17 @@ footer .grid-container {
   footer .grid-item{
   }
   footer .grid-item ul {
-  list-style:none;
-  line-height:1.8;
+    columns: 2;
+    gap: 40px;
+    list-style:none;
+    line-height:1.8;
   }
   footer .flex{
       display: flex;
       font-size:11px;
       gap: 40px;
       color: #57606B;
+      flex-direction: column;
   }
   footer .grid-item h4{
   font-size:16px;
@@ -802,12 +813,13 @@ footer .grid-container {
   }
 
 footer .grid-item .button{
-    margin-top:34px ;
+    margin-top: -8px;
     padding: 10px 18px;
     background-color: #FF7E35;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 80px;
     transition: all 0.3s ease 0s;
     font-weight: 500;
     font-size: 12px;
@@ -1032,6 +1044,10 @@ footer .grid-item .button:hover{
         margin-left: -12px;
     }
 
+    .new-sponsor{
+        max-width: 682px;
+    }
+
     /* Section Deskripsi */
 
     section.deskripsi{
@@ -1232,7 +1248,7 @@ footer .grid-item .button:hover{
     /* bio section */
 
     /* footer */
-    footer .grid-container{
+    .footer .grid-container{
         max-width: 695px;
         grid-template-columns: auto 371px auto;
         justify-content: space-between;
@@ -1308,8 +1324,351 @@ footer .grid-item .button:hover{
 
         /* section content */
 
+        section.content {
+            background-image: linear-gradient(180deg,#f3f5f7,transparent);
+        }
+        /* hero */
+        main.hero ul li{
+            font-size: 15px;
+        }
+
+        main.hero{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .end{
+            text-align: end;
+        }
+
+        .img{
+            top: 50px;
+            left: 124px;
+        }
+
+        .image1{
+            height: 214px;
+            width: 360px;
+        }
+
+        .image2{
+            height: 214px;
+            width: 360px;
+        }
+
+        main.hero .card{
+            right: 180.8px;
+            top: 125px;
+        }
+        
+        main.hero .card2{
+            right: 50.2px;
+            top: 125px;
+        }
+        /* hero */
+
+        /* honorable mention */
+
+        .new-sponsor{
+            display: grid;
+                grid-template-columns: auto auto;
+                justify-content: space-evenly;
+                row-gap: 10px;
+                margin-bottom: 40px;
+            }
+        .sponsor-bottom{
+                grid-column: 1/3;
+                text-align: center;
+        }
+
+        /* honorable mention */
+
+        /* advantages */
+
+        main.Advantages .box-container{
+            max-width: 360px;
+            padding: 25px 20px 22px 20px;
+        }
+
+        main.Advantages .box-container .box1{
+            margin-bottom: 25px;
+        }
+
+        main.Advantages .box-container .box1 h3{
+            font-size: 20px;
+            width: 188px;
+        }
+
+        main.Advantages .box-container .box5{
+            height: 140px;
+        }
+
+        main .box-container .box5{
+            padding: 0;
+        }
+
+        .box1 .flex1{
+            width: auto;
+            margin-right: 0;
+        }
+        .box1 .flex2{
+            width: auto;
+        }  
+
+        /* adv box */
+
+        .motto-box{
+            flex-direction: column;
+        }
+
+        main .box-container .adv-box{
+            align-items: center;
+        }
+
+        main .box-container .box2{
+            width: 320px;
+        }
+
+        main .box-container .box3{
+            width: 320px;
+        }
+
+        main .box-container .box4{
+            width: 320px;
+        }
+        /* adv box */
+
+        /* advantages */
 
         /* section content */
 
+        /* section deskripsi */
+
+        section.deskripsi{
+            max-width: 360px;
+        }
+
+        .text-container{
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+
+        .text-container-2{
+            margin-bottom: 20px;
+            align-items: center;            
+        }
+
+        .text-container-4{
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .text-container-5{
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        .plus{
+            padding: 0;
+        }
+
+        .text-item {
+            padding: 0;
+            text-align: left;
+        }
+        
+        .text-item2 {
+            padding:0;
+        }
+        
+        .text-item3{
+            text-align:left;
+            margin-top: 5px;
+            padding:0;
+        }
+
+        .title h2{
+            font-size: 18px;
+        }
+
+        .minus{
+            flex:1 1 100% ;
+            padding-top: 20px;
+        }
+
+        .minus a{
+            right: 0px;
+            top: 20px;
+        }
+
+        .minus img{
+            width: 100px;
+            height: 125px;
+            margin-left: 10px;
+        }
+
+        .text-container-3 .title p {
+            max-width: 390px;
+        }
+
+        /* section deskripsi */
+
+        /* section team */
+
+        .judul{
+            font-size: 18px;
+        }
+        .subtext{
+            font-size: 12px;
+            max-width: 360px;
+            margin: 0 auto;
+        }
+
+        .member div h4{
+            font-size: 14px;
+        }
+
+        section.team .member{
+            max-width: 410px;
+            gap: 10px;
+            margin: 30px 0 0 30px;
+        }
+
+        section.team .member div.def img{
+            width: 143px;
+            height: 144px;
+            margin-bottom: 10px;
+        }
+        section.team .member div.min img{
+            display: none;
+        }
+        section.team .member div.max img{
+            width: 143px;
+            height: 166px;
+            margin-bottom: 10px;
+        } 
+        /* section team */
+
+        /* section quote */
+
+        section.quotes .container{
+            max-width: 320px;
+            margin: 30px auto 235px auto;
+        }
+
+        section.quotes .star{
+            width: 25px;
+            height: 25px;
+        }
+
+        section.quotes .container h1{
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        section.quotes .mail{
+            position: absolute;
+            bottom: -36px;
+            right: 120px;
+            width: 76px;
+        }
+
+        /* section quote */
+
+        /* section bio */
+
+        section.bio {
+            margin: 0 auto 100px auto;
+        }
+
+        section.bio .grid-container{
+            max-width: 360px;
+            display: flex;
+            flex-direction: column-reverse;
+            height: 320px;
+            padding: 20px;
+        }
+
+        section.bio .grid-item-1{
+            text-align: center;
+        }
+
+        section.bio .grid-item-1 img {
+            width: 218px;
+            height: 238px;
+            margin-top: 0;
+        }
+
+        section.bio .grid-item p{
+            margin-bottom: 20px;
+            max-width: none;
+        }
+
+        section.bio .grid-item img {
+            height: 40px;
+        }
+        /* section bio */
+
+        /* footer */
+
+        footer .grid-item1{
+            border: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        footer .grid-item {
+            border-top: solid 2px;
+            border-bottom: solid 2px;
+            padding: 20px 0;
+        }
+
+        footer .grid-item1 p{
+            padding-top: 15px;
+            font-size: 12px;
+        }
+
+        footer .grid-item1 h4{
+            flex-direction: row-reverse;
+            justify-content: start;
+        }
+
+        .footer .grid-container{
+            display: flex;
+            flex-direction: column;
+            max-width: 360px;
+            gap: 20px;
+        }
+
+        footer .grid-item .button{
+            width: 60px;
+            padding: 10px 8px;
+        }
+        
+        footer .grid-item ul{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 43px;
+        }
+
+        footer .flex{
+            flex-direction: row-reverse;
+        }
+        .footer .grid-container :nth-child(1){order: 2;}
+        .footer .grid-container :nth-child(2){order: 1;}
+        .footer .grid-container :nth-child(3){order: 3;}
+
+        .grid-item2 .info{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        footer .grid-item2 img{
+            margin-right: 5px;
+            margin-top: 20px;
+        }
+
+        /* footer */
     }
 }
