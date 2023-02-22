@@ -73,9 +73,8 @@ header button{
 }
 
 header button:hover{
-    background-color: #FFFFFF;
-    color: #366059;
-    border: 1px solid #366059;
+    background-color: #539b8e;
+    color: #fff;
     transition: 0.3s;
 }
 
@@ -187,6 +186,7 @@ main.hero{
     width: 290px;
     border-radius: 30px;
     margin-top: -108px;
+    object-fit: cover;
 }
 
 .hero-background .hero1{
@@ -267,10 +267,14 @@ main.hero{
 }
 
 .sponsor{
-    width: 853px;
-    height: 30px;
+    display: flex;
+    justify-content: space-between;
     margin-top: 47px;
-    margin-bottom: 128px;
+    padding-bottom: 150px;
+}
+
+.sponsor img{
+    width: 90px;
 }
 
 
@@ -307,6 +311,7 @@ main.hero{
   
   .item1 h2{
     font-size: 27px;
+    font-weight: 600;
   }
 
   .item1 button{
@@ -343,39 +348,32 @@ main.hero{
   .item2 p{
     color: #3E635D;
     font-weight: 600;
-    margin-right: 5px;
+  }
+
+  .item2 img{
+    position: absolute;
+    border-radius: 100%;
+    border: 2px solid white;
   }
 
 .item2 .El1{
-    position: absolute;
     bottom: 17px;
     left: 15px;
-    border-radius: 100%;
-    border: 2px solid white;
 }
 
 .item2 .El2{
-    position: absolute;
     bottom: 17px;
     left: 40px;
-    border-radius: 100%;
-    border: 2px solid white;
 }
 
 .item2 .El3{
-    position: absolute;
     bottom: 17px;
     left: 65px;
-    border-radius: 100%;
-    border: 2px solid white;
 }
 
 .item2 .El4{
-    position: absolute;
     bottom: 17px;
     left: 90px;
-    border-radius: 100%;
-    border: 2px solid white;
 }
 
 .item2 a{
@@ -404,7 +402,6 @@ main.hero{
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 0;
 }
 
   .item3 p{
@@ -492,7 +489,7 @@ main.hero{
 
 .row1{
     display: grid;
-    flex-direction: row;
+    grid-template-columns: auto auto;
     gap: 10px;
 }
 /* section deskripsi */
@@ -508,15 +505,23 @@ section.deskripsi{
     gap: 10px;
     background-color: #2196F3;
     padding: 60px 10px 60px 10px;
-}
-  
-.deskripsi .grid-deskripsi{
     background-color: #ffffffcc;
     text-align: left;
     font-size: 30px;
 }
 
-.grid-deskripsi .des1{
+.deskripsi .our-services {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 60px 10px 60px 10px;
+    background-color: #ffffffcc;
+    text-align: left;
+    font-size: 30px;
+}
+
+.our-services .des1{
     font-size: 21px;
     font-family: "inter", sans-serif;
     color: #346159;
@@ -524,13 +529,13 @@ section.deskripsi{
     margin-right: 62px;
 }
 
-.grid-deskripsi .des2{
+.our-services .des2{
     font-size: 12px;
     font-family: "inter", sans-serif;
     color: #90969E;
 }
 
-.grid-deskripsi .des3 a{
+.our-services .des3 a{
     padding: 10px 15px 10px 15px;
     background-color: #FFFFFF;
     border: 1px solid #366059;
@@ -545,7 +550,7 @@ section.deskripsi{
     margin-left: 50px;
 }
 
-.grid-deskripsi .des3 a:hover{
+.our-services .des3 a:hover{
     background-color: #366059;
     color: #FFFFFF;
     transition: 0.3s;
@@ -674,10 +679,10 @@ section.deskripsi{
 
 .member{
     max-width: 958px;
-    padding-top: 63px;
+    margin: 0 auto;
+    margin-top: 63px;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    margin: 0 auto;
     gap: 22px;
 }
 
@@ -789,7 +794,7 @@ section.deskripsi{
 
 .footer{
     background-color: #ffffff;
-    /* margin-bottom: 70px; */
+    margin-bottom: 70px;
 }
 
 .footer .bottom{
@@ -804,6 +809,10 @@ section.deskripsi{
     font-size: 16px;
     font-weight: bold;
     font-family: "inter", sans-serif;
+}
+
+.bottom .navigation ul{
+    columns: 2;
 }
 
 .navigation h4{
@@ -933,7 +942,6 @@ section.deskripsi{
 
     .menu{
         grid-column: 1/3;
-        margin-bottom: 103px;
     }
 
     .menu ul{
@@ -951,28 +959,29 @@ section.deskripsi{
     .hero1 .gambar1{
         width: 290px;
         height: 386px;
-        margin-top: -108px;
+        margin-top: 0px;
     }
 
     .hero1 .play{
         position: absolute;
-        top: 45px;
+        top: 145px;
         left: 90px;
     }
 
     .hero2 .gambar2{
         width: 290px;
         height: 386px;
+        margin-top: 0px;
     }
 
     .hero2 .card{
-        top: 180px;
+        top: 290px;
         left: 25px;
     }
 
     .hero2 .card2{
-        top: 180px;
-        margin-right: 45px;
+        top: 290px;
+        right: 50px;
     }
 
     .sponsor{
@@ -1035,7 +1044,7 @@ section.deskripsi{
         margin-top: 100px;
     }
 
-    .grid-deskripsi .des1{
+    .our-services .des1{
         font-size: 18px;
     }
 
@@ -1082,6 +1091,7 @@ section.deskripsi{
 
     .member{
         margin-left: 30px;
+        gap: 10px;
     }
 
     .member .sedang img{
@@ -1111,11 +1121,13 @@ section.deskripsi{
     .kata{
         max-width: 706px;
         padding: 35px 35px 0px 35px;
+        gap: 10px;
     }
 
     .kata img{
-        width: 193px;
-        height: 288px;
+        width: 222px;
+        height: 270px;
+        margin-top: -115px;
     }
 
     .kata h4{
@@ -1130,6 +1142,7 @@ section.deskripsi{
     .footer{
         max-width: 706px;
         margin: 0 auto;
+        margin-bottom: 70px;
     }
 
     .footer .bottom{
@@ -1186,4 +1199,343 @@ section.deskripsi{
         font-size: 12px;
         width: 286px;
     }
+
+    main.hero{
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu ul{
+        width: 355px;
+    }
+
+    .hero-background .gambar1{
+        width: 360px;
+        height: 195px;
+    }
+
+    .hero-background .play{
+        width: 80px;
+        height: 80px;
+        top: 57px;
+        left: 135px;
+    }
+
+    .hero-background .gambar2{
+        width: 360px;
+        height: 286px;
+    }
+
+    .hero2 .card{
+        top: 190px;
+        left: 38px;
+    }
+
+    .hero2 .card2{
+        top: 190px;
+        left: 230px;
+    }
+
+    .sponsor{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding-bottom: 10px;
+    }
+
+    .sponsor img{
+        margin-top: 5px;
+    }
+
+    .sponsor-span{
+        grid-column: 2/4;
+        text-align: end;
+    }
+
+    .grid-container{
+        max-width: 360px;
+        padding: 25px;
+    }
+
+    .item1{
+        width: 310px;
+    }
+
+    .item1 h2{
+        font-size: 20px;
+        width: 196px;
+    }
+
+    .item1 button{
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    .item4 .icon{
+        font-size: 20px;
+    }
+
+    .item4 p{
+        font-size: 12px;
+        width: 113px;
+    }
+
+    .row1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item2{
+        width: 310px;
+        height: 130px;
+    }
+
+    .item2 p{
+        width: 245px;
+    }
+
+    .item2 img{
+        width: 28px;
+        height: 28px;
+    }
+
+    .item2 .El1{
+
+    }
+    .item2 .El2{
+        left: 35px;
+    }
+    .item2 .El3{
+        left: 55px;
+    }
+    .item2 .El4{
+        left: 75px;
+    }
+    .item2 a{
+        left: 105px;
+        bottom: 13px;
+    }
+
+    .item3{
+        width: 310px;
+        height: 130px;
+    }
+
+    .item3 button{
+        margin-top: 20px;
+    }
+
+    .item3 .vector{
+        height: 130px;
+    }
+
+    .item5{
+        width: 310px;
+        height: 200px;
+    }
+
+    section.deskripsi{
+        max-width: 360px;
+    }
+
+    .deskripsi .our-services{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+
+    .deskripsi .grid-deskripsi{
+        padding: 20px 0px;
+    }
+
+    .our-services .des1{
+        font-size: 16px;
+
+    }
+
+    .our-services .des3 a{
+        margin-left: 0;
+    }
+
+    .grid-deskripsi .title{
+        font-size: 20px;
+    }
+
+    .more a{
+        font-size: 15px;
+    }
+
+    .de h2{
+        font-size: 20px;
+    }
+
+    .min a{
+        font-size: 15px;
+        top: -73px;
+    }
+
+    .min img{
+        object-fit: cover;
+        margin-right: 0;
+        width: 90px;
+        height: 100px;
+    }
+
+    .de p{
+        width: 174px;
+    }
+
+    .de{
+        width: 185px;
+    }
+
+    section.team{
+        
+    }
+
+    .none{
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .none h4{
+        font-size: 15px;
+    }
+
+    .none p{
+        margin-top: 5px;
+        width: 280px;
+    }
+
+    .member{
+        margin-top: 20px;
+    }
+
+    .member h4{
+        font-size: 16px;
+    }
+
+    .member .sedang img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .member .besar img{
+        width: 140px;
+        height: 160px;
+    }
+
+    .member .kecil img{
+        width: 140px;
+        height: 130px;
+    }
+
+    section.quote{
+        margin-top: 50px;
+    }
+
+    .kata{
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 360px;
+        padding: 20px;
+    }
+
+    .quotes{
+        max-width: 345px;
+    }
+
+    .kata .foto{
+        text-align: center;
+    }
+
+    .kata h4{
+        font-size: 15px;
+    }
+
+    .kata p{
+        font-size: 12px;
+    }
+
+    .quotes img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .quotes .mail{
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        bottom: -45px;
+        left: 135px;
+    }
+
+    .quotes h2{
+        font-size: 21px;
+        margin-bottom: 150px;
+    }
+
+    section.footer{
+        margin-bottom: 70px;        
+    }
+
+
+    .footer .bottom{
+        display: flex;
+        flex-direction: column;
+        max-width: 360px;
+        gap: 30px;
+    }
+
+    .bottom .navigation{
+        /* text-align: center; */
+        padding: 30px 0px;
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
+    }
+
+    .bottom .navigation ul{
+        columns: auto;
+    }
+
+    .bottom .navigation .pe{
+        gap: 0px;
+        justify-content: left;
+        flex-direction: row-reverse;
+    }
+
+    .pe ul li{
+        display: inline-block;
+        justify-content: space-between;
+        padding-right: 40px;
+    }
+
+    .john{
+        border: 0px;
+    }
+
+    .john h4{
+        flex-direction: row-reverse;
+        justify-content: left;
+    }
+
+    .john p{
+        text-align: left;
+        margin: 0;
+        width: 275px;
+    }
+
+    .contact{
+        /* text-align: center; */
+    }
+
+    .contact .kontak{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .footer .bottom :nth-child(1) { order: 2; }
+    .footer .bottom :nth-child(2) { order: 1; }
+    .footer .bottom :nth-child(3) { order: 3; }
 }
