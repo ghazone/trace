@@ -1232,12 +1232,12 @@ footer .grid-item2 img {
 		margin-right: 0;
 	}
 	/* footer */
-
+}
 	@media only screen and (max-width: 425px) {
 		/* Header nav */
 
 		header {
-			margin: 10px auto 15px auto;
+			margin: 10px auto 35px auto;
 		}
 
 		header .container {
@@ -1410,6 +1410,7 @@ footer .grid-item2 img {
 
 		section.deskripsi {
 			max-width: 360px;
+            margin-bottom: 30px;
 		}
 
 		.text-container {
@@ -1582,8 +1583,8 @@ footer .grid-item2 img {
 		}
 
 		footer .grid-item {
-			border-top: solid 2px;
-			border-bottom: solid 2px;
+			border-top: solid 2px #DFE3EA;
+			border-bottom: solid 2px #DFE3EA;
 			padding: 20px 0;
 		}
 
@@ -1641,4 +1642,4 @@ footer .grid-item2 img {
 
 		/* footer */
 	}
-}
+
