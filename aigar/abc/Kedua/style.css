@@ -1,0 +1,400 @@
+/* =========================== */
+/* Global */
+/* =========================== */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+h1{
+    width: 611px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 120%;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+h2{
+    font-size: 38px;
+    font-weight: bold;
+    font-family: 'inter', sans-serif;
+}
+
+h4{
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'inter', sans-serif;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'inter', sans-serif;
+}
+
+a{
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-family: 'inter', sans-serif;
+    text-decoration: none;
+}
+
+ul li{
+    color: #FFFFFF;
+    list-style: none;
+    font-size: 14px;
+}
+
+button{
+    font-family: 'inter', sans-serif;
+    border-radius: 90px;
+    border: none;
+    font-size: 18px;
+    padding: 18px 30px;
+    background-color: #F6B50E;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+
+/* =========================== */
+/* Block */
+/* =========================== */
+
+/* Nav ======================= */
+
+header{
+    position: relative;
+    background: transparent;
+    height: 850px;
+}
+
+header li, header a {
+    font-family: "inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #5F656D;
+    text-decoration: none;
+} 
+
+header .container{
+    padding-top: 60px;
+}
+
+header .row{
+    width: 805px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span{
+    align-items: center;
+    display: flex;
+    font-family: "inter", sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+span b{
+    color: #F6B50E;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: 0 auto;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.nav__links li a:hover{
+    color: #366059;
+}
+
+/* Nav ======================= */
+
+
+/* Hero ====================== */
+
+section.hero{
+    padding-top: 200px;
+    padding-bottom: 70px;
+    background-image: url(asset/green-interior-modern-interior-living-room-style-with-soft-sofa-green-wall-3d-rendering\ 2.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 850px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    z-index: -1;
+}
+
+.hero img{
+    position: absolute;
+    left: 450px;
+}
+
+.hero .button{
+    margin-top: 70px;
+    text-align: center;
+}
+
+/* Hero ====================== */
+
+
+/* Kategori =================== */
+
+section.kategori{
+    margin-top: 100px;
+}
+
+.kategori .ver{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kategori .asset{
+    width: 272px;
+    height: 11px;
+    position: absolute;
+    left: 155px;
+}
+
+.popular{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular .card{
+    padding: 50px 0px 0px 0px;
+    width: 270px;
+    height: 363px;
+    background-color: #f1f1f1;
+    border-radius: 28px;
+    border: none;
+    text-align: center;
+    filter: grayscale(100);
+    transition: all 0.3s;
+}
+
+.popular p{
+    display: none;
+    font-weight: 400;
+    color: #959595;
+    transition: all 0.3s;
+}
+
+.popular .cabinet{
+    position: relative;
+}
+
+.popular .cabinet img{
+    position: absolute;
+    left: 50px;
+    bottom: -30px;
+    transition: all 0.3s;
+}
+
+.popular .lamp{
+    position: relative;
+}
+
+.popular .lamp img{
+    position: absolute;
+    left: 25px;
+    bottom: -30px;
+    transition: all 0.3s;
+}
+
+.popular .table{
+    position: relative;
+}
+
+.popular .table img{
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    transition: all 0.3s;
+}
+
+.popular .chair{
+    position: relative;
+}
+
+.popular .chair img{
+    position: absolute;
+    left: 55px;
+    bottom: -30px;
+    transition: all 0.3s;
+}
+
+/* Hover */
+
+.popular .card:hover{
+    padding: 30px 0px 0px 0px;
+}
+
+.popular .card:hover{
+    filter: grayscale(0);
+}
+
+.popular .card:hover img{
+    bottom: -20px;
+}
+
+.popular .card:hover p{
+    display: block;
+    transition: all 1s;
+}
+
+/* Kategori =================== */
+
+
+/* Artikel =================== */
+
+section.artikel{
+    margin-top: 120px;
+}   
+
+.artikel img{
+    width: 645px;
+    height: 425px;
+    border-radius: 28px;
+}
+
+.artikel p{
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 400;
+    color: #686767;
+}
+
+.artikel .flex{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.artikel .flex .deskripsi{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.artikel .flex .deskripsi p{
+    width: 320px;
+}
+
+.artikel .flex .deskripsi button{
+ width: 222px;
+}
+
+/* Artikel =================== */
+
+/* Promo =================== */
+
+section.promo{
+}
+
+.promo .bg{
+    top: -200px;
+    position: absolute;
+    width: 1170px;
+    height: 399px;
+    padding: 50px 0px 50px 90px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.713), rgba(255, 255, 255, 0.275)), url('asset/Rectangle\ 6.png');
+    border-radius: 28px;
+}
+
+.promo .bg h2{
+    font-size: 42px;
+    width: 300px;
+    color: #FFFFFF;
+}
+
+.promo .bg button{
+    margin-top: 98px;
+}
+
+/* Promo =================== */
+
+
+/* Footer =================== */
+
+footer{
+    position: relative;
+    background-color: #366059;
+    padding-bottom: 70px;
+    clear: both;
+    margin-top: 290px;
+}
+
+footer .menu{
+    max-width: 991px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 300px;
+}
+
+footer p{
+    color: #FFFFFF;
+}
+
+footer ul{
+    margin-top: 20px;
+}
+
+footer ul li{
+    padding: 3px 0px;
+}
+
+footer ul li a{
+    font-weight: 400;
+}
+footer .gplay{
+    width: 162px;
+    height: 48px;
+}
+footer .appstore{
+    width: 162px;
+    height: 48px;
+    object-fit: cover;
+}
+
+/* Footer =================== */
