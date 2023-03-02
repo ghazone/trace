@@ -8,8 +8,12 @@
     margin: 0;
 }
 
+section{
+
+}
+
 .container{
-    max-width: 1170px;
+    max-width: 1182px;
     margin: 0 auto;
 }
 
@@ -67,6 +71,7 @@ button{
     background-color: #F6B50E;
     color: #FFFFFF;
     cursor: pointer;
+    font-weight: 600;
 }
 
 
@@ -78,9 +83,10 @@ button{
 /* Nav ======================= */
 
 header{
-    position: relative;
+    position: absolute;
     background: transparent;
-    height: 850px;
+    z-index: 1;
+    left: 50px;
 }
 
 header li, header a {
@@ -122,12 +128,14 @@ span b{
 }
 
 .nav__links{
+    display: flex;
     list-style: none;
+    width: 393px;
+    justify-content: space-between;
 }
 
 .nav__links li{
     display: inline-block;
-    padding: 0px 20px;
 }
 
 .nav__links li a{
@@ -149,24 +157,24 @@ section.hero{
     padding-top: 200px;
     padding-bottom: 70px;
     background-image: url(asset/green-interior-modern-interior-living-room-style-with-soft-sofa-green-wall-3d-rendering\ 2.png);
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
-    height: 850px;
+    height: 995px;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-    z-index: -1;
 }
 
 .hero img{
     position: absolute;
-    left: 450px;
+    left: 370px;
+    top: 340px;
 }
 
 .hero .button{
-    margin-top: 70px;
+    margin-top: 60px;
     text-align: center;
 }
 
@@ -187,7 +195,6 @@ section.kategori{
 
 .kategori .asset{
     width: 272px;
-    height: 11px;
     position: absolute;
     left: 155px;
 }
@@ -201,7 +208,7 @@ section.kategori{
 .popular .card{
     padding: 50px 0px 0px 0px;
     width: 270px;
-    height: 363px;
+    height: 338px;
     background-color: #f1f1f1;
     border-radius: 28px;
     border: none;
@@ -221,15 +228,23 @@ section.kategori{
     position: relative;
 }
 
+.popular .lamp{
+    position: relative;
+}
+
+.popular .table{
+    position: relative;
+}
+
+.popular .chair{
+    position: relative;
+}
+
 .popular .cabinet img{
     position: absolute;
     left: 50px;
     bottom: -30px;
     transition: all 0.3s;
-}
-
-.popular .lamp{
-    position: relative;
 }
 
 .popular .lamp img{
@@ -239,19 +254,11 @@ section.kategori{
     transition: all 0.3s;
 }
 
-.popular .table{
-    position: relative;
-}
-
 .popular .table img{
     position: absolute;
     left: 0;
     bottom: -40px;
     transition: all 0.3s;
-}
-
-.popular .chair{
-    position: relative;
 }
 
 .popular .chair img{
@@ -293,6 +300,7 @@ section.artikel{
     width: 645px;
     height: 425px;
     border-radius: 28px;
+    object-fit: cover;
 }
 
 .artikel p{
@@ -302,10 +310,18 @@ section.artikel{
     color: #686767;
 }
 
+.artikel h2{
+    line-height: 100%;
+}
+
+.artikel p{
+    line-height: 150%;
+}
+
 .artikel .flex{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
 }
 
 .artikel .flex .deskripsi{
@@ -315,12 +331,12 @@ section.artikel{
     gap: 45px;
 }
 
-.artikel .flex .deskripsi p{
+.artikel p{
     width: 320px;
 }
 
 .artikel .flex .deskripsi button{
- width: 222px;
+ width: 237px;
 }
 
 /* Artikel =================== */
@@ -328,16 +344,18 @@ section.artikel{
 /* Promo =================== */
 
 section.promo{
+    margin-top: 100px;
 }
 
 .promo .bg{
-    top: -200px;
-    position: absolute;
+    position: relative;
     width: 1170px;
     height: 399px;
     padding: 50px 0px 50px 90px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.713), rgba(255, 255, 255, 0.275)), url('asset/Rectangle\ 6.png');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.749), rgba(255, 255, 255, 0)), url('asset/Rectangle\ 6.png');
     border-radius: 28px;
+    z-index: 1;
+    background-size: cover;
 }
 
 .promo .bg h2{
@@ -357,10 +375,10 @@ section.promo{
 
 footer{
     position: relative;
-    background-color: #366059;
-    padding-bottom: 70px;
+    background-color: #29795A;
+    padding-bottom: 150px;
     clear: both;
-    margin-top: 290px;
+    margin-top: -200px;
 }
 
 footer .menu{
@@ -372,6 +390,10 @@ footer .menu{
     padding-top: 300px;
 }
 
+footer a{
+    color: #EEEFF4;
+}
+
 footer p{
     color: #FFFFFF;
 }
@@ -381,7 +403,7 @@ footer ul{
 }
 
 footer ul li{
-    padding: 3px 0px;
+    padding: 12px 0px;
 }
 
 footer ul li a{
@@ -398,3 +420,411 @@ footer .appstore{
 }
 
 /* Footer =================== */
+
+@media only screen and (max-width: 1440px){
+
+
+    
+    header{
+        left: 130px;
+    }
+
+    header .row{
+        width: 788px;
+    }
+
+    .hero img{
+        left: 450px;
+    }
+
+    .kategori .asset{
+        left: 248px;
+        width: 272px;
+        height: 15px;
+    }
+
+}
+
+/* =============Tablet Landscape============= */
+
+@media only screen and (max-width: 1024px){
+
+    /* =========================== */
+    /* Global */
+    /* =========================== */
+
+    .container{
+        max-width: 882px;
+        margin: 0 auto;
+    }
+
+    h1{
+        width: 400px;
+        margin: 0 auto;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 120%;
+        justify-content: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    
+    h2{
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'inter', sans-serif;
+    }
+    
+    h4{
+        font-size: 24px;
+        font-weight: 600;
+        font-family: 'inter', sans-serif;
+    }
+    
+    p{
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'inter', sans-serif;
+    }
+    
+    a{
+        font-size: 14px;
+        font-weight: 600;
+        color: #FFFFFF;
+        font-family: 'inter', sans-serif;
+        text-decoration: none;
+    }
+    
+    ul li{
+        color: #FFFFFF;
+        list-style: none;
+        font-size: 14px;
+    }
+    
+    button{
+        font-family: 'inter', sans-serif;
+        border-radius: 90px;
+        border: none;
+        font-size: 15px;
+        padding: 15px 28px;
+        background-color: #F6B50E;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    /* =========================== */
+    /* Block */
+    /* =========================== */
+
+    /* Nav ======================= */
+
+    header{
+        position: absolute;
+        background: transparent;
+        left: 70px;
+    }
+
+    header li, header a {
+        font-family: "inter", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #5F656D;
+        text-decoration: none;
+    } 
+
+    header .container{
+        padding-top: 60px;
+    }
+
+    header .row{
+        width: 650px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    span{
+        align-items: center;
+        display: flex;
+        font-family: "inter", sans-serif;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    span b{
+        color: #F6B50E;
+    }
+
+    /* Nav ======================= */
+
+
+    /* Hero ======================= */
+
+    section.hero{
+        padding-top: 178px;
+        height: 697px;
+    }
+
+    .hero img{
+        left: 360px;
+        top: 255px;
+        height: 10px;
+    }
+    
+    /* Hero ======================= */
+
+
+    /* Kategori ======================= */
+
+    .kategori .asset{
+        height: 12px;
+        left: 140px;
+    }
+
+    .popular .card{
+        width: 200px;
+        height: 270px;
+        padding-top: 37px;
+    }
+
+    .popular .cabinet img{
+        left: 38px;
+        bottom: -30px;
+        width: 125px;
+        height: 180px;
+    }
+    
+    .popular .lamp img{
+        left: 17px;
+        bottom: -15px;
+        width: 167px;
+        height: 166px;
+    }
+    
+    .popular .table img{
+        left: 0;
+        bottom: -30px;
+        width: 198px;
+        height: 198px;
+    }
+    
+    .popular .chair img{
+        left: 40px;
+        bottom: -20px;
+        width: 120px;
+        height: 168px;
+    }
+
+    /* Hover */
+
+    .popular .card:hover{
+        padding: 20px 0px 0px 0px;
+    }
+    
+    .popular .card:hover{
+        filter: grayscale(0);
+    }
+    
+    .popular .card:hover img{
+        bottom: 5px;
+    }
+
+    /* Kategori ======================= */
+    
+    
+    /* Artikel ======================= */
+
+    .artikel img{
+        width: 542px;
+        height: 344px;
+    }
+
+    .artikel .flex .deskripsi button {
+        width: 203px;
+    }
+
+    /* Artikel ======================= */
+
+
+    /* Promo ======================= */
+
+    .promo .bg{
+        width: 884px;
+        height: 300px;
+    }
+
+    .promo .bg button{
+        margin-top: 48px;
+    }
+
+    .promo .bg h2{
+        font-size: 30px;
+        width: 247px;
+    }
+
+    /* Promo ======================= */
+
+
+    /* Footer ======================= */
+
+    footer{
+    }
+
+    footer .menu{
+        max-width: 811px;
+    }
+
+    /* Footer ======================= */
+    
+}
+
+@media only screen and (max-width: 768px){
+    /* =========================== */
+    /* Global */
+    /* =========================== */   
+
+    .container{
+        max-width: 628px;
+    }
+
+    /* =========================== */
+    /* Block */
+    /* =========================== */
+
+
+    /* Header ==================== */
+
+    header .container{
+        padding-top: 37px;
+    }
+
+    .nav__links{
+        display: none;
+    }
+
+    /* Header ==================== */
+
+
+    /* Hero ==================== */
+
+    section.hero{
+        height: 523px;
+        padding-top: 156px;
+    }
+
+    .hero img{
+        left: 235px;
+        top: 232px;
+    }
+
+    .hero .button{
+        margin-top: 56px;
+    }
+
+    /* Hero ==================== */
+
+
+    /* Kategori ==================== */
+
+    .popular{
+        flex-wrap: wrap;
+        gap: 50px 28px;
+    }
+
+    .popular .card{
+        width: 300px;
+        height: 400px;
+        padding-top: 57px;
+    }
+
+    .popular .cabinet img{
+        left: 57px;
+        bottom: -30px;
+        width: 190px;
+        height: 266px;
+    }
+    
+    .popular .lamp img{
+        left: 25px;
+        bottom: -25px;
+        width: 250px;
+        height: 247px;
+    }
+    
+    .popular .table img{
+        left: 18px;
+        bottom: -30px;
+        width: 265px;
+        height: 262px;
+    }
+    
+    .popular .chair img{
+        left: 60px;
+        bottom: -20px;
+        width: 178px;
+        height: 250px;
+    }
+
+    /* Kategori ==================== */
+
+
+    /* Artikel ==================== */
+
+    .artikel .flex{
+        flex-direction: column;
+        align-items: start;
+        gap: 50px;
+    }
+
+    .artikel img{
+        width: 628px;
+        height: 225px;
+    }
+
+    .artikel .flex .deskripsi{
+        gap: 25px;
+    }
+
+    .artikel h2{
+        width: 628px;
+    }
+
+    .artikel p {
+        width: 428px;
+    }
+
+    /* Artikel ==================== */
+
+
+    /* Promo ==================== */
+    
+    .promo .bg{
+        width: 628px;
+        height: 269px;
+        padding: 40px 0 40px 40px;
+    }
+
+    .promo .bg button {
+        margin-top: 39px;
+    }
+
+    /* Promo ==================== */
+
+
+    /* Footer ==================== */
+
+    footer{
+        margin-top: -82px;
+    }
+    
+    footer .menu{
+        max-width: 601px;
+        padding-top: 141px;
+    }
+    
+    /* Footer ==================== */
+}
