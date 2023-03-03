@@ -206,7 +206,7 @@ section.hero {
 }
 .hero .container img{
     position: absolute;
-    bottom: 100px;
+    bottom: 95px;
     left: 85px;
 }
 
@@ -495,7 +495,7 @@ header .container{
 
 header .primary-menu a{
     letter-spacing: 0;
-    padding: 15px 13px;
+    padding: 15px 15px;
 }
 
 header.header{
@@ -504,7 +504,7 @@ header.header{
 
 header .site-nav-menu {
     position: relative;
-    right: 27%;
+    right: 25.5%;
 }
 
 /* Header ------------------------------------------------------------------ */
@@ -694,7 +694,7 @@ footer .col{
 
 /* Tablet Portrait */
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:855px){
 
     /* ------------------------------------------------------------------------ */
     /* Global------------------------------------------------------------------ */
@@ -955,4 +955,8 @@ footer .col{
         padding-top: 205px;
     }
     /* Footer------------------------------------------------------------------------------ */
+}
+
+@media only screen and (max-width:400px){
+
 }
