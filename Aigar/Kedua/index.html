@@ -7,23 +7,25 @@
     <title>Kedua</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <script src="https://kit.fontawesome.com/56b7f9998b.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header>
-        <div class="container">
-            <div class="row">
-                <span>Inte<b>rio.</b></span>
-                <div>
-                <nav>
-                    <ul class="nav__links">
-                        <li><a href="">Categories</a></li>
-                        <li><a href="">Furniture</a></li>
-                        <li><a href="">Interior Design</a></li>
-                        <li><a href="">Property</a></li>
-                    </ul>
-                </nav>
-                </div>
+        <div class="header-container">
+            <div class="site-logo">
+                <a href="#">Inte<span>rio.</span></a>
+            </div>
+            <div class="mobile-nav">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="site-nav-menu">
+                <ul class="primary-menu">
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Interior Design</a></li>
+                    <li><a href="#">Property</a></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -99,39 +101,49 @@
                 <div class="company">
                     <p>Company</p>
                     <ul>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="support">
                     <p>Support</p>
                     <ul>
-                        <li><a href="">Help Center</a></li>
-                        <li><a href="">Safety Center</a></li>
-                        <li><a href="">Community Guidelines</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Center</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
                     </ul>
                 </div>
                 <div class="legal">
                     <p>Legal</p>
                     <ul>
-                        <li><a href="">Cookies Policy</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms of Service</a></li>
-                        <li><a href="">Law Enforcement</a></li>
+                        <li><a href="#">Cookies Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Law Enforcement</a></li>
                     </ul>
                 </div>
                 <div class="app">
                     <p>Install App</p>
                     <ul>
-                        <li><a href=""><img src="asset/GooglePlay.png" class="gplay"></a></li>
-                        <li><a href=""><img src="asset/AppStore.svg" class="appstore"></a></li>
+                        <li><a href="#"><img src="asset/GooglePlay.png" class="gplay"></a></li>
+                        <li><a href="#"><img src="asset/AppStore.svg" class="appstore"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+   
+    <script>
+       $(document).ready(function(){
+        $(".mobile-nav i").click(function(){
+            $(".site-nav-menu").toggleClass("mobile-menu");
+        });
+       })
+    </script>
     
 </body>
 </html>
