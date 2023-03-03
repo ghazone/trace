@@ -6,6 +6,8 @@
 /* global */
 /* ----------------------------------- */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -48,6 +50,7 @@ h4{
 
 h5{
     font-size: 32px;
+    font-weight: 600;
 }
 
 p{
@@ -96,7 +99,7 @@ b{
 
 button{
     font-size: 18px;
-    padding: 18px 28.5px;
+    padding: 18px 23px;
     text-decoration: none;
     background-color: #DCAC16;
     border: none;
@@ -345,6 +348,7 @@ section.artikel p{
     font-size: 20px;
     color: #686767;
     line-height: 150%;
+    font-weight: 500;
 }
 
 section.artikel .isi{
@@ -352,6 +356,10 @@ section.artikel .isi{
     display: flex;
     flex-direction: column;
     gap: 54px;
+}
+
+section.artikel .isi h4{
+    font-weight: 700;
 }
 
 section.artikel .deskripsi{
@@ -363,6 +371,7 @@ section.artikel .deskripsi{
 
 section.artikel .deskripsi button{
     width: 216px;
+    padding: 18px 0;
 }
 
 /* Promo --------------------------------------------------------------------- */
