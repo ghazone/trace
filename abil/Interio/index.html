@@ -6,30 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ea114ce314.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <div class="container">
-            <nav>
-                <div class="row">
-                    <span class="logo">Inte<b>rio</b></span>
-                    <ul>
-                        <li>
-                            Categories
-                        </li>
-                        <li>
-                            Furniture
-                        </li>
-                        <li>
-                            Interior Design
-                        </li>
-                        <li>
-                            Property
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <div class="icon">
+                <span class="logo">Inte<b>rio</b></span>
+            </div>
+
+            <div class="mobile-nav">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="site-nav-menu">
+                <ul class="primary-menu">
+                    <li>
+                        <a href=""> Categories</a>
+                    </li>
+                    <li>
+                        <a href="">Furniture</a>
+                    </li>
+                    <li>
+                        <a href="">Interior Design</a>
+                    </li>
+                    <li>
+                        <a href="">Property</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </header>
 
@@ -90,6 +97,7 @@
         </div>
     </section>
 
+
     <section class="promo">
         <div class="container">
             <div class="linear">
@@ -99,46 +107,56 @@
         </div>
     </section>
 
-    <footer>
 
+    <footer>
         <div class="container">
-        <div class="row">
-            <div class="col">
-                <p>Company</p>
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+            <div class="row">
+                <div class="col">
+                    <p>Company</p>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p>Support</p>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Center</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p>Legal</p>
+                    <ul>
+                        <li><a href="#">Cookies Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Services</a></li>
+                        <li><a href="#">Low Enforcement</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p>Install App</p>
+                    <ul>
+                        <li><a href="#"><img src="asset/fake.png" alt=""></a></li>
+                        <li><a href="#"><img src="asset/apple2.png" alt="" srcset=""></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col">
-                <p>Support</p>
-                <ul>
-                    <li><a href="">Help Center</a></li>
-                    <li><a href="">Safety Center</a></li>
-                    <li><a href="">Community Guidelines</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <p>Legal</p>
-                <ul>
-                    <li><a href="">Cookies Policy</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms of Services</a></li>
-                    <li><a href="">Low Enforcement</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <p>Install App</p>
-                <ul>
-                    <li><a href="#"><img src="asset/fake.png" alt=""></a></li>
-                    <li><a href="#"><img src="asset/apple2.png" alt="" srcset=""></a></li>
-                </ul>
-            </div>
-        </div>
         </div>
     </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("header .mobile-nav i").click(function(){
+                $("header .site-nav-menu").toggleClass("mobile-menu")
+            });
+        })
+    </script>
 
 </body>
 </html>

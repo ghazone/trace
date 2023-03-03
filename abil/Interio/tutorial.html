@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vici.css">
+    <script src="https://kit.fontawesome.com/ea114ce314.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    <header class="header-area">
+        <div class="container">
+            <div class="icon">
+               <a href="#">Inte<span>rio</span></a>
+            </div>
+            
+            <div class="mobile-nav">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            <div class="site-nav-menu">
+                <ul class="primary-menu">
+                    <li>
+                        <a href=""> Categories</a>
+                    </li>
+                    <li>
+                        <a href="">Furniture</a>
+                    </li>
+                    <li>
+                        <a href="">Interior Design</a>
+                    </li>
+                    <li>
+                        <a href="">Property</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".mobile-nav i").click(function(){
+                $(".site-nav-menu").toggleClass("mobile-menu")
+            });
+        })
+    </script>
+</body>
+</html>
