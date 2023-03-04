@@ -129,19 +129,58 @@ header .container{
 }
 
 .icon{
+    z-index: 1;
     float: left;
     margin-top: -2px;
 }
 
 header .mobile-nav{
+    position: relative;
     display: none;
     float: right;
-    /* margin: 10px;
-    padding: 10px; */
+    width: 24px;
+    height: 24px;
     font-size: 20px;
     color: #fff;
+
     outline: none;
     cursor: pointer;
+    padding: 0;
+    appearance: none;
+    background: none;
+    border: none;
+}
+
+.mobile-nav:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    margin: 2px 0 5px 0;
+    transition: all 0.4s;
+}
+
+.mobile-nav .bar, .mobile-nav:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    margin: 5px 0;
+    transition: all 0.4s;
+}
+
+.mobile-nav.is-active:before {
+    transform: rotate(-45deg) translate(-6px,7px);
+}
+
+.mobile-nav.is-active:after {
+    transform: rotate(45deg) translate(-4.5px,-5.5px);
+}
+
+.mobile-nav.is-active .bar{
+    opacity: 0;
 }
 
 header .site-nav-menu{
@@ -773,13 +812,14 @@ footer .col{
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
 
     header .site-nav-menu{
         float: none;
         position: absolute;
-        background: #5bb096;
+        background: #366154f2;
         right: 0px;
         width: 100%;
         top: -32px;
@@ -801,7 +841,6 @@ footer .col{
 
     header .mobile-menu{
         clip-path: circle(142% at 100% 0%);
-        border-radius: 0 0 16px 16px;
     }
 
     header .primary-menu li a:after{
@@ -811,11 +850,6 @@ footer .col{
     header ul li a{
         font-size: 16px;
     }
-
-
-
-
-
 
     /* Header------------------------------------------------------------------------------*/
     
@@ -963,9 +997,270 @@ footer .col{
     footer .row{
         padding-top: 205px;
     }
-    /* Footer------------------------------------------------------------------------------ */
+    /* Footer-------------------------------------------------------------------------------*/
 }
 
-@media only screen and (max-width:400px){
+/* Mobile-----------------------------------------------------------------------------------*/
 
+@media only screen and (max-width:450px){
+    /* ------------------------------------------------------------------------------------ */
+    /*Global--------------------------------------------------------------------------------*/
+    /* ------------------------------------------------------------------------------------ */
+    h1{
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+    
+    h2{
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+    
+    h4{
+        font-size: 14px;
+    }
+    
+    h5{
+        font-size: 14px;
+    }
+    
+    p{
+        font-size: 14px;
+    }
+    
+    ul ,li{
+        font-size: 12px;
+    }
+    
+    li a{
+        font-size: 12px;
+    }
+    
+    .container{
+        max-width: 300px;
+    }
+    
+    .logo{
+        font-size: 15px;
+    }
+    
+    button{    
+        font-size: 10px;
+        padding: 11px 14px;
+    }
+
+/* ------------------------------------------------------------------------------------ */
+/*Global--------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/*Block --------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------ */
+
+/* Header------------------------------------------------------------------------------ */
+
+header .container{
+    max-width: 300px;
+}
+
+header .primary-menu li{
+    margin: 31.5px 0px;
+}
+
+header .site-nav-menu{
+    top: -14px;
+    padding: 30px 0 0px 0;
+
+}
+
+header.header{
+    top:14px ;
+}
+
+/* Header------------------------------------------------------------------------------ */
+
+/* Hero-------------------------------------------------------------------------------- */
+
+section.hero{
+    height: 267px;
+    padding-top: 50px;
+}
+
+.hero .container{
+    max-width: 162px;
+}
+
+.hero button{
+    margin-top: 16px;
+}
+
+.hero .container img{
+    width: 74px;
+    bottom: 43px;
+    left: 8px;
+}
+
+/* Hero-------------------------------------------------------------------------------- */
+
+/* Kategori---------------------------------------------------------------------------- */
+
+section.kategori {
+    margin-top: 30px;
+}
+
+section.kategori p {
+    font-size: 10px;
+}
+
+.vektor {
+    width: 97px;
+    margin: -7px 0 30px 0;
+}
+
+section.kategori .row {
+    flex-wrap: wrap;
+    gap: 40px 20px;
+}
+
+/* Kategori---------------------------------------------------------------------------- */
+
+/* Card-------------------------------------------------------------------------------- */
+
+section.kategori .card {
+    width: 140px;
+    height: 186px;
+    padding: 27.5px 0px 0 0px;
+}
+
+section.kategori .card .chair{
+    width: 83.48px;
+    height:125.07px ;
+    left: 28px;
+    bottom: -16px;
+}
+
+section.kategori .card .cabin{
+    width:88.5px ;
+    height:128.04px ;
+    left: 26px;
+    bottom: -16px;
+}
+
+section.kategori .card .table{
+    width: 112px;
+    height: 113px;
+    left: 14px;
+    bottom: -16px;
+}
+
+section.kategori .card .lamp{
+    width: 83.48px;
+    height:125.07px ;
+    left: 28px;
+    bottom: -16px;
+}
+
+section.kategori .card p {
+    font-size: 10px;
+}
+
+/* Card-------------------------------------------------------------------------------- */
+
+/* Hover------------------------------------------------------------------------------- */
+
+section.kategori .card:hover .chair{
+    bottom: -7px;
+}
+
+section.kategori .card:hover .cabin{
+    bottom: -7px;
+}
+
+section.kategori .card:hover .table{
+    bottom: -7px;
+}
+
+section.kategori .card:hover .lamp{
+    bottom: -7px;
+}
+
+/* Hover------------------------------------------------------------------------------- */
+
+/* Artikel----------------------------------------------------------------------------- */
+
+section.artikel {
+    margin: 76px 0 76px 0;
+}
+
+section.artikel p{
+    width: auto;
+}
+
+section.artikel .isi h4{
+    font-size: 20px;
+    max-width: none;
+}
+
+section.artikel .img-bg{
+    width: 300px;
+    height: 160px;
+}
+
+section.artikel .row{
+    flex-direction: column;
+    align-items: start;
+    gap: 25px;
+}
+
+section.artikel .isi{
+    gap: 15px;
+}
+
+section.artikel .deskripsi{
+    gap: 12px;
+}
+
+section.artikel p{
+    font-size: 14px;
+}
+
+section.artikel .deskripsi button{
+    width: 123px;
+    padding: 11px 0;
+}
+
+/* Artikel----------------------------------------------------------------------------- */
+
+/* Promo------------------------------------------------------------------------------- */
+
+section.promo .linear{
+    height: 150px;
+    padding: 20px 0 0 22px;
+}
+
+section.promo .linear h2{
+    font-size: 16px;
+    line-height: 19.2px;
+    width: 116px;
+    margin-bottom: 20px;
+}
+
+/* Promo------------------------------------------------------------------------------- */
+
+
+/* Footer-------------------------------------------------------------------------------*/
+
+footer .row {
+    padding-top: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+    margin-top: -80px;
+}
+
+/* Footer-------------------------------------------------------------------------------*/
 }

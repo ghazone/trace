@@ -16,9 +16,9 @@
                 <span class="logo">Inte<b>rio</b></span>
             </div>
 
-            <div class="mobile-nav">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+            <button class="mobile-nav">
+                <div class="bar"></div>
+            </button>
 
             <div class="site-nav-menu">
                 <ul class="primary-menu">
@@ -52,7 +52,7 @@
     <section class="kategori">
         <div class="container">
             <div class="row">
-                <h4>Shop Popular Categories </h4>
+                <h4>Shop Popular Categories</h4>
                 <p>See all</p>
             </div>
             <img src="asset/Vector 6.svg" class="vektor" alt="">
@@ -152,8 +152,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function(){
-            $("header .mobile-nav i").click(function(){
+            $("header .mobile-nav ").click(function(){
                 $("header .site-nav-menu").toggleClass("mobile-menu")
+                $("header .mobile-nav").toggleClass("is-active")
             });
         })
     </script>
