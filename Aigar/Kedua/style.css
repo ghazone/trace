@@ -75,10 +75,12 @@ button{
     background-color: #F6B50E;
     color: #FFFFFF;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-
+i{
+    font-size: 17px;
+}
 
 /* =========================== */
 /* Block */
@@ -100,6 +102,7 @@ header{
 .site-logo{
     float: left;
     padding: 17px 0px;
+    z-index: 1;
 }
 .site-logo a{
     color: #fff;
@@ -110,9 +113,6 @@ header{
 }
 .site-logo span{
     color: #F6B50E;
-}
-.mobile-nav{
-    display: none;
 }
 .site-nav-menu{
     float: right;
@@ -134,11 +134,40 @@ header{
     transition: .5s;
 }
 .mobile-nav{
+    width: 20px;
+    height: 20px;
+    display: none;
     float: right;
     font-size: 24px;
     color: #fff;
     outline: none;
     cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+.mobile-nav .bar, .mobile-nav:after, .mobile-nav:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active:before{
+    transform: rotate(-45deg) translate(-2px, 2px);
+}
+.mobile-nav.is-active:after{
+    transform: rotate(45deg) translate(-6px, -7px);
+}
+.mobile-nav.is-active .bar{
+    opacity: 0;
 }
 
 /* Nav ======================= */
@@ -687,11 +716,10 @@ footer .appstore{
         width: 123%;
         right: -70px;
         top: -37px;
-        padding: 75px 0px 50px 0px;
+        padding: 75px 0px;
         border-top: 1px solid #4a4848;
         clip-path: circle(0% at 100% 0%);
         transition: all .8s;
-        border-radius: 0 0 50px 50px;
     }
     .primary-menu li{
         display: block;
@@ -832,4 +860,251 @@ footer .appstore{
     }
     
     /* Footer ==================== */
+}
+
+/* Mobile */
+@media only screen and (max-width: 360px){
+    /* =========================== */
+    /* Global */
+    /* =========================== */
+
+    .container{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    h1{
+        font-size: 18px;
+        width: 160px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    h4{
+        font-size: 14px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    a{
+        font-size: 12px;
+    }
+
+    button{
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    /* =========================== */
+    /* Block */
+    /* =========================== */
+
+
+    /* Header ==================== */
+    header{
+        left: 30px;
+        margin-top: 30px;
+    }
+
+    .header-container{
+        width: 300px;
+    }
+
+    .site-nav-menu{
+        right: -29px;
+        width: 120%;
+        padding: 70px 0px;
+    }
+
+    .site-logo{
+        padding: 0;
+    }
+
+    .site-logo a{
+        font-size: 15px;
+    }
+
+    .primary-menu li{
+        padding-top: 15px;
+    }
+    /* Header ===================- */
+
+
+    /* Hero ===================- */
+    section.hero{
+        height: 289px;
+        padding-top: 84px;
+    }
+    
+    .hero img{
+        width: 65px;
+        left: -35px;
+        top: -13px;
+    }
+
+    .hero .button{
+        margin-top: 5px;
+    }
+    /* Hero ===================- */
+
+
+    /* Kategori ===================- */
+
+    section.kategori{
+        margin-top: 50px;
+    }
+
+    .kategori .asset{
+        width: 82px;
+        left: 50px;
+        top: -8px;
+    }
+
+    .popular{
+        margin-top: 40px;
+        gap: 25px 20px;
+    }
+
+    .popular .card{
+        width: 139px;
+        height: 186px;
+        padding-top: 26px;
+    }
+
+    .popular .card:hover{
+        padding-top: 15px;
+    }
+
+    .popular .cabinet img{
+        left: 27px;
+        bottom: -20px;
+        width: 88px;
+        height: 125px;
+    }
+    
+    .popular .lamp img{
+        left: 12px;
+        bottom: -10px;
+        width: 115px;
+        height: 115px;
+    }
+    
+    .popular .table img{
+        left: 15px;
+        bottom: -20px;
+        width: 109px;
+        height: 109px;
+    }
+    
+    .popular .chair img{
+        left: 27px;
+        bottom: -10px;
+        width: 82px;
+        height: 116px;
+    }
+
+    /* Kategori ===================- */
+
+
+    /* Kategori ===================- */
+
+    section.artikel{
+        margin-top: 60px;
+    }
+
+    .artikel img{
+        width: 300px;
+        height: 120px;
+    }
+
+    .artikel .flex{
+        gap: 30px;
+    }
+
+    .artikel .flex .deskripsi{
+        width: 300px;
+        gap: 15px;
+    }
+
+    .artikel h2{
+        width: 300px;
+    }
+
+    .artikel p{
+        width: 300px;
+        font-size: 13px;
+    }
+
+    .artikel .flex .deskripsi button {
+        width: 110px;
+    }
+
+    /* Kategori ===================- */
+    
+
+    /* Promo ===================- */
+
+    section.promo{
+        margin-top: 50px;
+    }
+
+
+
+    .promo .bg{
+        height: 156px;
+        padding: 28px 0px 28px 20px;
+    }
+
+    .promo .bg h2{
+        font-size: 15px;
+        width: 108px;
+    }
+
+    .promo .bg button{
+        margin-top: 17px;
+    }
+
+    /* Promo ===================- */
+
+
+    /* Footer ===================- */
+
+    footer .menu{
+        max-width: 300px;
+        flex-wrap: wrap;
+        gap: 50px 28px;
+        justify-content: normal;
+    }
+
+    .col{
+        width: 110px;
+    }
+
+    .support{
+        width: 130px;
+    }
+
+    .app{
+        width: 130px;
+    }
+
+    footer ul li{
+        padding: 5px 0px;
+    }
+
+    footer .gplay{
+        width: 162px;
+        height: 48px;
+    }
+
+    footer .appstore{
+        width: 162px;
+        height: 48px;
+    }
+
+    /* Footer ===================- */
 }
